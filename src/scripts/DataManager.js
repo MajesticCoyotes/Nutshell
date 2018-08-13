@@ -1,3 +1,8 @@
+/*
+    Module created by: Madi
+    PURPOSE: Performs all CRUD operations to the database
+*/
+
 const getData = Object.create(null, {
 
     getUsers: {
