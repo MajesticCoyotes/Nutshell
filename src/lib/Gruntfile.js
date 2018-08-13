@@ -23,20 +23,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        uglify: {
-            options: {
-                banner: "/*! <%= pkg.name %> <%= grunt.template.today(yyyy-mm-dd) %> */"
-            },
-            build: {
-                files: [{
-                    expand: true,
-                    cwd: "../../dist",
-                    src: "app.js",
-                    dest: "../../dist",
-                    ext: ".min.js"
-                }]
-            }
-        },
         eslint: {
             src: ["../scripts/**/*.js", "!node_modules/**/*.js"]
         },
