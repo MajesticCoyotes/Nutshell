@@ -1,11 +1,22 @@
 {
     "users": [
-
+        {
+            "userName": "Madi"
+        }
     ],
     "tasks": [
 
     ],
     "articles": [
-        
+
+    ],
+    "events": [
+
+    ],
+    "friends": [
+
+    ],
+    "messages": [
+
     ]
 }
