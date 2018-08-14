@@ -3,12 +3,12 @@
 
 function landingPageDOM() {
     const $loginDiv = $("#login-div");
-    $loginDiv.append(`<div>
+    $loginDiv.html(`<div>
                         <div id="welcome-header">
                             <h1>Welcome to Nutshell!</h1>
                         </div>
                         <div id="login-form">
-                            <input id="login-name" type="text" placeholder="Name">
+                            <input id="login-name" type="text" placeholder="Username">
                             <input id="login-email" type="email" placeholder="Email">
                         </div>
                         <div id="button-div">
