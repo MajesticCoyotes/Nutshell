@@ -11,8 +11,6 @@ const saveNewUser = () => {
     email: $("#register-email").val(),
     photo: $("#register-photo").val()
     }
-    console.table(newUser)
-
     dataManager.saveData.saveUser(newUser)
 }
 
