@@ -1,21 +1,21 @@
 //Author: Jonathan Edwards
 //Purpose: Builds the HTML structure for the 'Register New User' page
 
-const newUser = () => {
+const registerNewUser = () => {
     return `
     <fieldset>
-        <label for="username">Username:</label>
-        <input required type="text" id="username">
+        <label for="register-username">Username:</label>
+        <input required type="text" id="register-username"><br>
 
-        <label required for="email">Email Address:</label>
-        <input required type="text" id="email">
+        <label required for="register-email">Email Address:</label>
+        <input required type="text" id="register-email"><br>
 
-        <label required for="photo">Photo:</label>
-        <input type="file" id="photo">
+        <label required for="pregister-hoto">Photo:</label>
+        <input type="file" id="register-photo"><br>
 
-        <button id="registerUserButton">Register New User</button>
+        <button id="registerUserButton">Create New User</button>
     </fieldset>
     `
 }
 
-module.exports = newUser
+module.exports = registerNewUser
