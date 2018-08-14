@@ -1,8 +1,13 @@
 const getData = Object.create(null, {
-
     getUsers: {
         value: () => {
             return fetch("http://localhost:8088/users")
+            .then(response => response.json())
+        }
+    },
+    getUserEmails: {
+        value: (loginEmail) => {
+            return fetch(`http://localhost:8088/users?email=${loginEmail}`)
             .then(response => response.json())
         }
     },
