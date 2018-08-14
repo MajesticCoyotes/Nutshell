@@ -7,7 +7,7 @@ const saveNewUser = require("./login/saveNewUser")
 console.log(manageUserData.getData.getUsers());
 
 console.log(landingPageDOM());
-// createTask();
+createTask();
 
 
 $("#login-div").on("click", (event) => {
