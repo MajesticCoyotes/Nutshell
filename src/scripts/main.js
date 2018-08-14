@@ -2,12 +2,16 @@ const landingPageDOM = require("./login/loginDOM");
 const manageUserData = require("./DataManager");
 const registerNewUser = require("./login/newUserDOM")
 const saveNewUser = require("./login/saveNewUser")
+const showEventStuff = require("./event/eventDOM");
+const clearEventForm = require("./event/renderEvents");
 
 console.log(manageUserData.getData.getUsers());
 
 console.log(landingPageDOM());
 
+showEventStuff.showEventForm();
 
+// login and register eventlisteners via madi, jonathan, and kayla
 $("#login-div").on("click", (event) => {
     if (event.target.id === "register-user-button") {
         $("#login-div").html(registerNewUser)
@@ -57,5 +61,20 @@ $("#login-div").on("click", (event) => {
                         $("#login-div").remove()
                     }
                 })
+    }
+})
+
+// event div eventlistners author: kayla 
+$("#event-div").on("click", (event) => {
+    if(event.target.id === "save-event-button"){
+        let newEvent = {
+            title: $("#event-name").val(),
+            date: $("#event-date").val(),
+            location: $("#event-location").val()
+        }
+        
+        clearEventForm()
+
+        showEventStuff.eventListDom(newEvent);
     }
 })

@@ -1,0 +1,45 @@
+// Module Created by: Kayla Reid
+// Purpose: DOM Representation of event input area 
+
+const showEventForm = () => {
+    $("#event-div").append(`
+    <div class="d-flex">
+        <h3>Up coming events</h3>
+        <button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#event-modal">+</button>
+    </div>
+
+    <div id="event-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create a new event!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <input id="event-name" type="text" placeholder="Event Name">
+        <input id="event-date" type="text" placeholder="Date of you event">
+        <input id="event-location" type="text" placeholder="Event Location">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button id="save-event-button" type="button" class="btn btn-primary">Save event</button>
+        </div>
+      </div>
+    </div>
+  </div>`)
+}
+const eventListDom = (newEvent) => {
+    $("#event-div").append(
+        `<div id="event-div--${newEvent.id}">
+            <div>
+                <h4>${newEvent.title}</h4>
+                <p>${newEvent.date}</p>
+            </div>
+            <p>${newEvent.location}</p>
+            <button>Edit Event</button>
+        </div>`)
+}
+
+module.exports = {showEventForm, eventListDom};
