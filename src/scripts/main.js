@@ -7,6 +7,7 @@ const saveNewUser = require("./login/saveNewUser")
 console.log(manageUserData.getData.getUsers());
 
 console.log(landingPageDOM());
+// createTask();
 
 
 $("#login-div").on("click", (event) => {
@@ -33,12 +34,12 @@ $("#login-div").on("click", (event) => {
             
         }
     if (event.target.id === "login-button") {
-        manageUserData.getData.getUsers(loginEmail)
+        let loginEmail = $("#login-email").val()
+        manageUserData.getData.getUserEmails(loginEmail)
             .then((result) => {
                 let stringifiedUserObject = JSON.stringify(result);
                 sessionStorage.setItem("userInfo", stringifiedUserObject);
             })
-
     }
 
 })

@@ -1,20 +1,21 @@
 {
-    "users": [
-
-    ],
-    "tasks": [
-
-    ],
-    "articles": [
-
-    ],
-    "events": [
-
-    ],
-    "friends": [
-
-    ],
-    "messages": [
-
-    ]
+  "users": [
+    {
+      "username": "madi",
+      "email": "testing@test.com",
+      "photo": "",
+      "id": 1
+    },
+    {
+      "username": "test",
+      "email": "testing",
+      "photo": "C:\\fakepath\\state-quarters-map.jpg",
+      "id": 2
+    }
+  ],
+  "tasks": [],
+  "articles": [],
+  "events": [],
+  "friends": [],
+  "messages": []
 }

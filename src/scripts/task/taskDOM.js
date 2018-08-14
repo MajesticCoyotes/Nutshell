@@ -1,5 +1,5 @@
 const createTaskDOM = () => {
-    $("#task-div").append(`
+    $("body").prepend(`
     <div id="task-container">
         <h3>Tasks</h3>
         <button type="button" class="btn btn-info">+</button>
