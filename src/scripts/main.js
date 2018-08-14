@@ -23,6 +23,7 @@ $("#login-div").on("click", (event) => {
                 let user = result.find(result => {
                     return registerEmail === result.email || registerUsername === result.username 
                     })
+
                     if (user) {
                         alert("You suck")
                     } else {
@@ -31,7 +32,6 @@ $("#login-div").on("click", (event) => {
                         alert("You've successfully registered. Please log in")
                     }
                 })
-            
         }
     if (event.target.id === "login-button") {
         let loginEmail = $("#login-email").val()
@@ -40,6 +40,23 @@ $("#login-div").on("click", (event) => {
                 let stringifiedUserObject = JSON.stringify(result);
                 sessionStorage.setItem("userInfo", stringifiedUserObject);
             })
-    }
 
+            
+            manageUserData.getData.getUsers()
+            .then((result) => {
+                let email = $("#login-email").val()
+                let username = $("#login-name").val()
+
+                let user = result.find(result => {
+                    console.log(result.username)
+                    console.log(result.email)
+                    return email === result.email && username === result.username 
+                    })
+                    if (!user) {
+                        alert("Username does not exist")
+                    } else {
+                        $("#login-div").remove()
+                    }
+                })
+    }
 })
