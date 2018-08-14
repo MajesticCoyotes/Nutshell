@@ -40,22 +40,22 @@ $("#login-div").on("click", (event) => {
                 sessionStorage.setItem("userInfo", stringifiedUserObject);
             })
 
-            let email = $("#register-email").val()
-            let username = $("#register-username").val()
-
+            
             manageUserData.getData.getUsers()
             .then((result) => {
+                let email = $("#login-email").val()
+                let username = $("#login-name").val()
+
                 let user = result.find(result => {
+                    console.log(result.username)
+                    console.log(result.email)
                     return email === result.email && username === result.username 
                     })
-
-                    if (user) {
-                        alert("You suck")
+                    if (!user) {
+                        alert("Username does not exist")
                     } else {
-                        $("body").html("")
+                        $("#login-div").remove()
                     }
                 })
-
     }
-
 })
