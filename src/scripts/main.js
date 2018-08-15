@@ -44,8 +44,7 @@ $("#login-div").on("click", (event) => {
                 let stringifiedUserObject = JSON.stringify(result);
                 sessionStorage.setItem("userInfo", stringifiedUserObject);
             })
-
-            
+            .then(() => {
             manageUserData.getData.getUsers()
             .then((result) => {
                 let email = $("#login-email").val()
@@ -74,6 +73,7 @@ $("#login-div").on("click", (event) => {
 
                     }
                 })
+            })
     }
 })
 
