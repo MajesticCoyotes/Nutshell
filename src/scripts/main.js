@@ -108,9 +108,24 @@ $("#event-div").on("click", (event) => {
         let editId = event.target.id.split("--")[1]
         console.log("testing", editId)
         editEventModule.editEvent(editId);
+
     }
     if(event.target.id.includes("save-edited-event")){
-        let saveId = event.target.id.split("--")[1]
-        editEventModule.saveEventChanges(saveId)
+        let user = JSON.parse(sessionStorage.getItem("userInfo"));
+        let userId = user[0].id;
+        let saveEventId = event.target.id.split("--")[1]
+        manageUserData.editData.editEvent(saveEventId, editEventModule.saveEventChanges())
+        .then(() => {
+            document.querySelector("#event-list").innerHTML = "";
+            manageUserData.getData.getEvents(userId)
+            .then(updatedEvents => {
+                // console.log(updatedEvents)
+                updatedEvents.forEach(event => {
+                    document.querySelector("#event-list").innerHTML +=
+                    showEventStuff.eventListDom(event)
+                })
+            })
+        })
+
     }
 })

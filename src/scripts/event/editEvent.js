@@ -1,13 +1,15 @@
 // Module Created by: Kayla Reid
 // Purpose:  to edit events
 
- const saveEventChanges = (saveId) => {
+ const saveEventChanges = () => {
      let editedEvent = {
-        userId: saveId,
+        userId: JSON.parse(sessionStorage.getItem("userInfo"))[0].id,
         title: $("#edited-event-name").val(),
         date: $("#edited-event-date").val(),
         location: $("#edited-event-location").val()
+
      }
+
      return editedEvent
  }
 

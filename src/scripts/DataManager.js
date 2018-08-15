@@ -108,8 +108,8 @@ const editData = Object.create(null, {
         }
     },
     editEvent: {
-        value: (eventID, newEvent) => {
-            return fetch(`http://localhost:8088/events/${eventID}`, {
+        value: (eventId, newEvent) => {
+            return fetch(`http://localhost:8088/events/${eventId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
