@@ -11,9 +11,40 @@
       "email": "testing",
       "photo": "C:\\fakepath\\state-quarters-map.jpg",
       "id": 2
+    },
+    {
+      "username": "testing",
+      "email": "test",
+      "photo": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "email": "",
+      "photo": "",
+      "id": 4
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "title": "feed the bear",
+      "date": "2018-08-31",
+      "checkedBox": false,
+      "id": 1
+    },
+    {
+      "title": "DO MORE THINGS",
+      "date": "2018-08-09",
+      "checkedBox": false,
+      "id": 2
+    },
+    {
+      "title": "The quick brown fox jumps over the lazy dog",
+      "date": "2018-09-11",
+      "checkedBox": false,
+      "id": 3
+    }
+  ],
   "articles": [],
   "events": [],
   "friends": [],

@@ -22,6 +22,12 @@ const getData = Object.create(null, {
             .then(response => response.json())
         }
     },
+    getTaskByID: {
+        value: (taskID) => {
+            return fetch(`http://localhost:8088/tasks/${taskID}`)
+            .then(response => response.json())
+        }
+    },
     getArticles: {
         value: () => {
             return fetch("http://localhost:8088/articles")
@@ -88,6 +94,18 @@ const saveData = Object.create(null, {
 })
 
 const editData = Object.create(null, {
+    editCheckbox: {
+        value: (taskID, checkbox) => {
+            return fetch(`http://localhost:8088/tasks/${taskID}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(checkbox)
+            })
+            .then(response => response.json())
+        }
+    },
     editTask: {
         value: (taskID, newTask) => {
             return fetch(`http://localhost:8088/tasks/${taskID}`, {
