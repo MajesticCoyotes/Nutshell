@@ -18,8 +18,8 @@ const getData = Object.create(null, {
         }
     },
     getArticles: {
-        value: () => {
-            return fetch("http://localhost:8088/articles")
+        value: (userID) => {
+            return fetch(`http://localhost:8088/users/${userID}/articles?_sort=id&_order=desc`)
             .then(response => response.json())
         }
     },
