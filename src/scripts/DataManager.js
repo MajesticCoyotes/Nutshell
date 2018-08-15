@@ -24,8 +24,8 @@ const getData = Object.create(null, {
         }
     },
     getEvents: {
-        value: () => {
-            return fetch("http://localhost:8088/events")
+        value: (userId) => {
+            return fetch(`http://localhost:8088/events?userId=${userId}`)
             .then(response => response.json())
         }
     }

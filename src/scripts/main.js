@@ -9,7 +9,7 @@ console.log(manageUserData.getData.getUsers());
 
 console.log(landingPageDOM());
 
-showEventStuff.showEventForm();
+
 
 // login and register eventlisteners via madi, jonathan, and kayla
 $("#login-div").on("click", (event) => {
@@ -59,22 +59,51 @@ $("#login-div").on("click", (event) => {
                         alert("Username does not exist")
                     } else {
                         $("#login-div").remove()
+                        // added by kayla to call events on login
+                        showEventStuff.showEventForm();
+                        let user = JSON.parse(sessionStorage.getItem("userInfo"));
+                        let userId = user[0].id;
+                        manageUserData.getData.getEvents(userId)
+                        .then(events => {
+                            events.forEach(event => {
+                                $("#event-list").append(showEventStuff.eventListDom(event))
+                            })
+                        })
+                        
+
                     }
                 })
     }
 })
 
-// event div eventlistners author: kayla 
+// author: kayla 
+// event div eventlistners 
+
 $("#event-div").on("click", (event) => {
     if(event.target.id === "save-event-button"){
+        let user = JSON.parse(sessionStorage.getItem("userInfo"));
+        let userId = user[0].id;
+        console.log(userId)
         let newEvent = {
+            userId: userId,
             title: $("#event-name").val(),
             date: $("#event-date").val(),
             location: $("#event-location").val()
         }
-        
         clearEventForm()
-
+        manageUserData.saveData.saveEvent(newEvent)
+        .then(() => {
+            $("#event-list").html("")
+            manageUserData.getData.getEvents(userId)
+            .then(events => {
+                events.forEach(event => {
+                    $("#event-list").append(showEventStuff.eventListDom(event))
+                })
+            })
+        })
         showEventStuff.eventListDom(newEvent);
+    }
+    if(event.target.id === ""){
+
     }
 })

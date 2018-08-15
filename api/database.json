@@ -1,22 +1,43 @@
 {
-    "users": [
-        {
-            "userName": "Madi"
-        }
-    ],
-    "tasks": [
-
-    ],
-    "articles": [
-
-    ],
-    "events": [
-
-    ],
-    "friends": [
-
-    ],
-    "messages": [
-
-    ]
+  "users": [
+    {
+      "username": "iamkaylareid",
+      "email": "iamkaylareid@gmail.com",
+      "photo": "",
+      "id": 1
+    },
+    {
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
+      "id": 2
+    }
+  ],
+  "tasks": [],
+  "articles": [],
+  "events": [
+    {
+      "userId": 2,
+      "title": "hello",
+      "date": "1212-12-12",
+      "location": "asdfasdfad",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "title": "hello",
+      "date": "1212-12-12",
+      "location": "sfaasdfas",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "title": "xcvzdf",
+      "date": "1212-02-03",
+      "location": "xgshsfghdfg",
+      "id": 3
+    }
+  ],
+  "friends": [],
+  "messages": []
 }

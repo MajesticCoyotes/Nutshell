@@ -2,7 +2,7 @@
 // Purpose: DOM Representation of event input area 
 
 const showEventForm = () => {
-    $("#event-div").append(`
+    $("#event-form").append(`
     <div class="d-flex">
         <h3>Up coming events</h3>
         <button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#event-modal">+</button>
@@ -19,7 +19,7 @@ const showEventForm = () => {
         </div>
         <div class="modal-body">
         <input id="event-name" type="text" placeholder="Event Name">
-        <input id="event-date" type="text" placeholder="Date of you event">
+        <input id="event-date" type="date" placeholder="Date of you event">
         <input id="event-location" type="text" placeholder="Event Location">
         </div>
         <div class="modal-footer">
@@ -31,15 +31,14 @@ const showEventForm = () => {
   </div>`)
 }
 const eventListDom = (newEvent) => {
-    $("#event-div").append(
-        `<div id="event-div--${newEvent.id}">
+    return `<div id="event-div--${newEvent.id}">
             <div>
                 <h4>${newEvent.title}</h4>
                 <p>${newEvent.date}</p>
             </div>
             <p>${newEvent.location}</p>
-            <button>Edit Event</button>
-        </div>`)
+            <button id="edit-button--${newEvent.id}">Edit Event</button>
+        </div>`
 }
 
 module.exports = {showEventForm, eventListDom};
