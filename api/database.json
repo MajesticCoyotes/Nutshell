@@ -11,31 +11,58 @@
       "email": "me@me.com",
       "photo": "",
       "id": 2
+    },
+    {
+      "username": "madi",
+      "email": "madi@madi.com",
+      "photo": "",
+      "id": 3
     }
   ],
   "tasks": [],
   "articles": [],
   "events": [
     {
-      "userId": 2,
-      "title": "hello",
-      "date": "1212-12-12",
-      "location": "asdfasdfad",
-      "id": 1
+      "userId": 3,
+      "title": "hello 1",
+      "date": "2018-08-07",
+      "location": "sadfasd",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "title": "hello 2",
+      "date": "2018-08-16",
+      "location": "sadfasdfasd",
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "title": "hello 3",
+      "date": "2018-08-21",
+      "location": "asdfasdf",
+      "id": 8
     },
     {
       "userId": 2,
-      "title": "hello",
-      "date": "1212-12-12",
-      "location": "sfaasdfas",
-      "id": 2
+      "title": "event 1",
+      "date": "2018-08-02",
+      "location": "asdfasd",
+      "id": 9
     },
     {
       "userId": 2,
-      "title": "xcvzdf",
-      "date": "1212-02-03",
-      "location": "xgshsfghdfg",
-      "id": 3
+      "title": "event 2",
+      "date": "2018-08-16",
+      "location": "asdasdfasdfa",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "title": "event 3",
+      "date": "2018-08-21",
+      "location": "sadfasdfasd",
+      "id": 11
     }
   ],
   "friends": [],

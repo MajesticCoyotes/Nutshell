@@ -33,10 +33,10 @@ const showEventForm = () => {
 const eventListDom = (newEvent) => {
     return `<div id="event-div--${newEvent.id}">
             <div>
-                <h4>${newEvent.title}</h4>
-                <p>${newEvent.date}</p>
+                <h4 id="title-${newEvent.id}">${newEvent.title}</h4>
+                <p id="date-${newEvent.id}">${newEvent.date}</p>
             </div>
-            <p>${newEvent.location}</p>
+            <p id="location-${newEvent.id}">${newEvent.location}</p>
             <button id="edit-button--${newEvent.id}">Edit Event</button>
         </div>`
 }

@@ -4,6 +4,7 @@ const registerNewUser = require("./login/newUserDOM")
 const saveNewUser = require("./login/saveNewUser")
 const showEventStuff = require("./event/eventDOM");
 const clearEventForm = require("./event/renderEvents");
+const editEventModule = require("./event/editEvent")
 
 console.log(manageUserData.getData.getUsers());
 
@@ -83,7 +84,7 @@ $("#event-div").on("click", (event) => {
     if(event.target.id === "save-event-button"){
         let user = JSON.parse(sessionStorage.getItem("userInfo"));
         let userId = user[0].id;
-        console.log(userId)
+        // console.log(userId)
         let newEvent = {
             userId: userId,
             title: $("#event-name").val(),
@@ -103,7 +104,13 @@ $("#event-div").on("click", (event) => {
         })
         showEventStuff.eventListDom(newEvent);
     }
-    if(event.target.id === ""){
-
+    if(event.target.id.includes("edit-button")){
+        let editId = event.target.id.split("--")[1]
+        console.log("testing", editId)
+        editEventModule.editEvent(editId);
+    }
+    if(event.target.id.includes("save-edited-event")){
+        let saveId = event.target.id.split("--")[1]
+        editEventModule.saveEventChanges(saveId)
     }
 })

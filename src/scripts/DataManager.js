@@ -25,7 +25,7 @@ const getData = Object.create(null, {
     },
     getEvents: {
         value: (userId) => {
-            return fetch(`http://localhost:8088/events?userId=${userId}`)
+            return fetch(`http://localhost:8088/users/${userId}/events?_sort=id&_order=desc`)
             .then(response => response.json())
         }
     }
@@ -69,8 +69,8 @@ const saveData = Object.create(null, {
         }
     },
     saveEvent: {
-        value: (event) => {
-        return fetch("http://localhost:8088/events", {
+        value: (eventId, event) => {
+        return fetch(`http://localhost:8088/events/${eventId}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
