@@ -1,0 +1,90 @@
+#article-div {
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 1em
+}
+
+#articleList {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.article {
+    position: relative;
+    padding: 1em;
+    margin: 1.5em;
+}
+
+
+#articleHeader .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 140, 175);
+    padding: 1.5em;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.articleDate {
+    text-align: end;
+    font-size: .80em;
+    color: gray
+}
+
+.fa-plus-square {
+    color: white;
+}
+
+.newArticleButton {
+    background-color: rgb(106, 219, 0);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+}
+.newArticleButton:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgba(106, 219, 0, 0.651);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
+.newArticleButton:active {
+    transform: scale(1.1);
+    background-color: rgba(106, 219, 0, 0.600);
+    box-shadow: 0px 8px 12px -2px rgba(77,77,77,1);
+}
+
+.fa-trash-alt {
+    color: white;
+}
+
+.deleteArticleButton {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    background-color: rgb(197, 0, 0);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.deleteArticleButton:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgb(185, 0, 0);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
+.deleteArticleButton:active {
+    transform: scale(1.1);
+    background-color: rgba(177, 0, 0);
+    box-shadow: 0px 8px 12px -2px rgba(77,77,77,1);
+}
