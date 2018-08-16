@@ -3,6 +3,7 @@ const manageUserData = require("./DataManager");
 const renderTasks = require("./task/renderTasks");
 const registerNewUser = require("./login/newUserDOM");
 const saveNewUser = require("./login/saveNewUser");
+const taskSS = require("./task/taskSS");
 
 
 landingPageDOM();
@@ -27,6 +28,7 @@ $("#task-div").click((event)=>{
     if(event.target.id === "save-new-task-btn"){
         // 2.
         let newTask = {
+            userId: taskSS(),
             title: $("#new-task-input").val(),
             date: $("#new-date-input").val(),
             checkedBox: false
@@ -112,6 +114,7 @@ $("#task-div").click((event)=>{
         // grab value of user input
         const newTaskID = event.target.id.split("--")[1];
         const newEditedTask = {
+            userId: taskSS(),
             title: $("#edit-task-input").val(),
             date: $("#edit-date-input").val(),
             checkedBox: false
