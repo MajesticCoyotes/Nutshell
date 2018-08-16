@@ -17,8 +17,8 @@ const getData = Object.create(null, {
         }
     },
     getTasks: {
-        value: () => {
-            return fetch("http://localhost:8088/tasks?_sort=date&_order=asc")
+        value: (userID) => {
+            return fetch(`http://localhost:8088/users/${userID}/tasks?_sort=id&_order=asc`)
             .then(response => response.json())
         }
     },
