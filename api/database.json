@@ -1,22 +1,112 @@
 {
-    "users": [
-        {
-            "userName": "Madi"
-        }
-    ],
-    "tasks": [
-
-    ],
-    "articles": [
-
-    ],
-    "events": [
-
-    ],
-    "friends": [
-
-    ],
-    "messages": [
-
-    ]
+  "users": [
+    {
+      "username": "iamkaylareid",
+      "email": "iamkaylareid@gmail.com",
+      "photo": "",
+      "id": 1
+    },
+    {
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
+      "id": 2
+    },
+    {
+      "username": "madi",
+      "email": "madi@madi.com",
+      "photo": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "email": "",
+      "photo": "",
+      "id": 4
+    },
+    {
+      "username": "Jonathan",
+      "email": "j",
+      "photo": "",
+      "id": 5
+    }
+  ],
+  "tasks": [],
+  "articles": [
+    {
+      "title": "1",
+      "synopsis": "1",
+      "url": "1",
+      "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
+      "userId": 5,
+      "id": 1
+    }
+  ],
+  "events": [
+    {
+      "userId": 3,
+      "title": "hello 1",
+      "date": "2018-08-07",
+      "location": "sadfasd",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "title": "hello 2",
+      "date": "2018-08-16",
+      "location": "sadfasdfasd",
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "title": "hello 3",
+      "date": "2018-08-21",
+      "location": "asdfasdf",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "title": "event 1",
+      "date": "2018-08-02",
+      "location": "asdfasd",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "title": "event 2",
+      "date": "2018-08-16",
+      "location": "asdasdfasdfa",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "title": "event 4.4",
+      "date": "2018-08-21",
+      "location": "sadfasdfasd",
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "title": "dope",
+      "date": "2018-08-01",
+      "location": "asfdadfgsdf",
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "title": "uyjfjfj",
+      "date": "",
+      "location": "",
+      "id": 13
+    },
+    {
+      "userId": 5,
+      "title": "new.2",
+      "date": "2018-08-24",
+      "location": "new",
+      "id": 14
+    }
+  ],
+  "friends": [],
+  "messages": []
 }

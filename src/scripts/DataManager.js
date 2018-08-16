@@ -24,8 +24,8 @@ const getData = Object.create(null, {
         }
     },
     getEvents: {
-        value: () => {
-            return fetch("http://localhost:8088/events")
+        value: (userId) => {
+            return fetch(`http://localhost:8088/users/${userId}/events?_sort=date&_order=asc`)
             .then(response => response.json())
         }
     }
@@ -108,8 +108,8 @@ const editData = Object.create(null, {
         }
     },
     editEvent: {
-        value: (eventID, newEvent) => {
-            return fetch(`http://localhost:8088/events/${eventID}`, {
+        value: (eventId, newEvent) => {
+            return fetch(`http://localhost:8088/events/${eventId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

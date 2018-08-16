@@ -2,7 +2,7 @@
 //Purpose: Makes a logout button so users can logout of their account
 
 let landingPageDOM = require("./login/loginDOM")
-const loadUserFromSS = require("./loadUserFromSS")
+const loadUserFromSS = require("./userSS")
 
 let renderLogout = () => {
     document.querySelector("#logout").innerHTML = `
@@ -17,8 +17,9 @@ let renderLogout = () => {
         sessionStorage.setItem("userInfo", stringifiedUserObject);
         landingPageDOM();
         $("#article-div").html("")
-        $("#tast-div").html("")
-        $("#event-div").html("")
+        $("#task-div").html("")
+        $("#event-form").html("")
+        $("#event-list").html("")
         $("#logout").html("")
     })
 }

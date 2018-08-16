@@ -5,7 +5,7 @@ const articleDOM = require("./articleDOM")
 const dataManager = require("../DataManager")
 const buildArticleForm = require("./articleFormModal")
 const saveNewArticle = require("./saveNewArticle")
-const loadUserFromSS = require("../loadUserFromSS")
+const loadUserFromSS = require("../userSS")
 
 
 const articleDiv = document.querySelector("#article-div")
