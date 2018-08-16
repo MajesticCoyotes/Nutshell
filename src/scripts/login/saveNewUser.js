@@ -1,9 +1,8 @@
 //Author: Jonathan Edwards 
-//Purpose: Regiesters new user 
+//Purpose: Registers new user and saves their info in the API
 
 const dataManager = require("../DataManager")
 
-const registerNewUser = require("./newUserDOM")
 
 const saveNewUser = () => {
     let newUser = {

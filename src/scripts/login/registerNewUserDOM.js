@@ -13,7 +13,7 @@ const registerNewUser = () => {
         <label required for="pregister-hoto">Photo:</label>
         <input type="file" id="register-photo"><br>
 
-        <button id="registerUserButton">Create New User</button>
+        <button id="registerUserButton" class="btn btn-primary">Create New User</button>
     </fieldset>
     `
 }
