@@ -63,6 +63,13 @@
       "date": "2018-08-21",
       "location": "sadfasdfasd",
       "id": 11
+    },
+    {
+      "userId": 2,
+      "title": "dope",
+      "date": "2018-08-01",
+      "location": "asfdadfgsdf",
+      "id": 12
     }
   ],
   "friends": [],
