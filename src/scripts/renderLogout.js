@@ -15,12 +15,8 @@ let renderLogout = () => {
     document.querySelector("#logoutButton").addEventListener("click", () => {
         let stringifiedUserObject = JSON.stringify();
         sessionStorage.setItem("userInfo", stringifiedUserObject);
+        $("#content").html("")
         landingPageDOM();
-        $("#article-div").html("")
-        $("#task-div").html("")
-        $("#event-form").html("")
-        $("#event-list").html("")
-        $("#logout").html("")
     })
 }
 

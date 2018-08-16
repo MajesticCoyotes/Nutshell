@@ -1,25 +1,4 @@
-/* .newArticleButton {
-    background-color: rgb(106, 219, 0);
-    border: none;
-    height: 40px;
-    width: 40px;
-    border-radius: 7px;
-    transform: scale(1);
-    transition: all .3s;
-}
-.newArticleButton:hover {
-    border-radius: 50%;
-    transform: scale(1.2);
-    background-color: rgba(106, 219, 0, 0.651);
-    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
-}
-
-.newArticleButton:active {
-    transform: scale(1.1);
-    background-color: rgba(106, 219, 0, 0.600);
-    box-shadow: 0px 8px 12px -2px rgba(77,77,77,1);
-} */
-
+/* add event button */
 #add-event-button {
     background-color: rgb(106, 219, 0);
     border: none;
@@ -35,6 +14,7 @@
     background-color: rgba(106, 219, 0, 0.651);
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
 }
+/* edit button */
 .edit-button {
     background-color: dimgray;
     border: none;
@@ -51,8 +31,7 @@
     background-color: dimgray;
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
 }
-
-
+/* save edited changes button */
 .save-changes-button {
     background-color: rgb(7, 107, 255);
     border: none;
@@ -68,4 +47,47 @@
     transform: scale(1.2);
     background-color: rgba(7, 106, 255, 0.603);
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
+
+.do-this div:first-child {
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+
+
+/* whole event div */
+ /* #event-div {
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 1em
+} */
+
+/* event list styles */
+
+.event {
+    max-height: 500px;
+    overflow: scroll;
+    border-radius: 5px; 
+    border: 1px solid gray;
+    margin: 1em
+} 
+.event:hover {
+    transform: scale(1.025);
+
+}
+
+/* event form styles */
+#form {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid gray; */
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    margin: 1em;
+    border-radius: 5px
 }

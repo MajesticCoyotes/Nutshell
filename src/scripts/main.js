@@ -8,6 +8,7 @@ const registerNewUser = require("./login/registerNewUserDOM")
 const registerVerify = require("./login/registerVerify")
 const loadArticleSection = require("./article/loadArticleSection")
 const userSS = require("./userSS");
+const appendContent = require("./appendDivs");
 
 manageUserData.getData.getUsers()
 
@@ -30,31 +31,34 @@ $("#login-div").on("click", (event) => {
 
     if (event.target.id === "login-button") {
         manageUserData.getData.getUsers()
-            .then((result) => {
-                let user = result.find(result => {
-
-                    //Checks to see if the info entered is in the database
-                    return $("#login-email").val() === result.email && $("#login-name").val() === result.username
+        .then((result) => {
+            let user = result.find(result => {
+                
+                //Checks to see if the info entered is in the database
+                return $("#login-email").val() === result.email && $("#login-name").val() === result.username
+            })
+            if (!user) {
+                alert("Username does not exist")
+            } else {
+                //Loads all content into the article div
+                userSS.setUserInSS()
+                .then(() => {
+                    //Hides the login form
+                    $("#login-div").html("")
+                    appendContent()
+                    loadArticleSection()
                 })
-                if (!user) {
-                    alert("Username does not exist")
-                } else {
-                    //Loads all content into the article div
-                    userSS.setUserInSS()
-                        .then(() => loadArticleSection())
-                        .then(() => {
-                            showEventStuff.showEventForm()
-                            // let user = JSON.parse(sessionStorage.getItem("userInfo"));
-                            // let userId = user[0].id;
-                            manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
-                                .then(events => {
-                                    events.forEach(event => {
-                                        $("#event-list").append(showEventStuff.eventListDom(event))
-                                    })
-                                })
-                            //Hides the login form
-                            $("#login-div").html("");
+                .then(() => {
+                    showEventStuff.showEventForm()
+                    // let user = JSON.parse(sessionStorage.getItem("userInfo"));
+                    // let userId = user[0].id;
+                    manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
+                        .then(events => {
+                            events.forEach(event => {
+                                $("#event-list").append(showEventStuff.eventListDom(event))
+                            })
                         })
+                })
                 }
             })
     };
@@ -65,7 +69,7 @@ $("#login-div").on("click", (event) => {
 // author: kayla 
 // event div eventlistners 
 
-$("#event-div").on("click", (event) => {
+$("body").on("click", (event) => {
     if (event.target.id === "save-event-button") {
         let user = JSON.parse(sessionStorage.getItem("userInfo"));
         let userId = user[0].id;
@@ -90,6 +94,7 @@ $("#event-div").on("click", (event) => {
         showEventStuff.eventListDom(newEvent);
     }
     if (event.target.id.includes("edit-button")) {
+        console.log(event)
         let editId = event.target.id.split("--")[1]
         editEventModule.editEvent(editId);
     

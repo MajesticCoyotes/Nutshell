@@ -3,7 +3,7 @@
 
 const showEventForm = () => {
     $("#event-form").append(`
-    <div class="d-flex">
+    <div class="d-flex" id="form">
         <h3>Up coming events</h3>
         <button type="button" id="add-event-button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#event-modal"><i class="fas fa-plus-square"></i></button>
     </div>
@@ -31,11 +31,9 @@ const showEventForm = () => {
   </div>`)
 }
 const eventListDom = (newEvent) => {
-    return `<div id="event-div--${newEvent.id}">
-            <div>
+    return `<div id="event-div--${newEvent.id}" class="event">
                 <h4 id="title-${newEvent.id}">${newEvent.title}</h4>
                 <p id="date-${newEvent.id}">${newEvent.date}</p>
-            </div>
             <p id="location-${newEvent.id}">${newEvent.location}</p>
             <button class="edit-button"><i class="fas fa-edit editBtn" id="edit-button--${newEvent.id}"></i></button>
         </div>`
