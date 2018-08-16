@@ -24,8 +24,14 @@
  }
  
  #new-task-button {
-     color: white;
-     background-color: #28a745;
+    color: white;
+    background-color: rgb(106, 219, 0);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
  }
  
  .task-footer {
