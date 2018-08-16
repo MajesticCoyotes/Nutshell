@@ -13,7 +13,9 @@ const createTaskDOM = (editCreatedTask) => {
         <h3>Tasks</h3>
         <!-- button targets the modal below, and opens it when the button is clicked -->
 
-        <button id="new-task-button" type="button" class="btn btn-info ml-3 mt-2 mb-2" data-toggle="modal" data-target="#create-new-task-modal">+</button>
+        <button id="new-task-button" type="button" class="btn btn-info ml-3 mt-2 mb-2" data-toggle="modal" data-target="#create-new-task-modal">
+            <i class="fas fa-plus-square"></i>
+        </button>
         </div>
         <div id="list-tasks-container" class="d-flex flex-column card-body">
             <!-- div that holds the tasks -->
