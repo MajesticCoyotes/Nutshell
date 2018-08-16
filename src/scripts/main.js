@@ -7,76 +7,121 @@ const saveNewUser = require("./login/saveNewUser");
 
 landingPageDOM();
 
+/*
+    Author: Madi
+    +Added an event listener on the task div
+*/
 $("#task-div").click((event)=>{
     /*
-    IF THE USER CLICKED ON THE SAVE TASK BUTTON
+    IF THE USER CLICKED ON THE SAVE TASK BUTTON:
+        1. if the event.target.id is "save-new-task-btn"
+        2. create a new object to be placed inside of the API
+        3. save the newly created object to the API
+        4. clear the input fields
+        5. clear the task-container that holds the tasks
+        6. re-render the task-container
+        7. and get the newly created task form the API to populate it with
     */
 
-    // if the event.target.id is "save-new-task-btn"
+    // 1.
     if(event.target.id === "save-new-task-btn"){
-        // create a new object to be placed inside of the API
+        // 2.
         let newTask = {
             title: $("#new-task-input").val(),
             date: $("#new-date-input").val(),
             checkedBox: false
         }
-        // save the newly created object to the API
+        // 3.
         manageUserData.saveData.saveTask(newTask)
         .then(() => {
-            // clear the input fields
+            // 4.
             $("#new-task-input").val("");
             $("#new-date-input").val("");
-            // clear the task-container that holds the tasks
+            // 5.
             $("#task-container").html("");
-            // re-render the task-container 
+            // 6. 
             renderTasks.renderTaskDOM();
-            // and get the newly created task form the API to populate it with
+            // 7.
             renderTasks.getTasks();
         })
     }
 
     /*
-    IF THE USER CLICKED ON THE CHECKBOX
+    IF THE USER CLICKED ON THE CHECKBOX:
+        1. if the event.target.id INCLUDES the string "checkbox"
+        2. getting the taskID of the target
+        3. creating the new object to be placed inside of the API
+        4. editing the checkedBox property inside of the task key
+        5. clear the task-container that holds the tasks
+        6. re-render the task-container
+        7. and get the newly created task form the API to populate it with
+        8. get the task from API
+        9. if the task's checkbox is equal to true,
+        10. remove the task element from the page
+        11. delete task from API
     */
 
-    // if the event.target.id INCLUDES the string "checkbox"
+    // 1.
     if(event.target.id.includes("checkbox")){
-        // getting the taskID of the target
         const getTaskID = event.target.id.split("--")[1];
-        // creating the new object to be placed inside of the API
+       // 2.
         let checkboxChecked = {
+            // 3.
             checkedBox: true
         }
-        // editing the checkedBox property inside of the task key
+        // 4.
         manageUserData.editData.editCheckbox(getTaskID, checkboxChecked)
         .then(()=>{
-                // clear the task-container that holds the tasks
+            // 5.
                 $("#task-container").html("");
-                // re-render the task-container 
+                // 6.
                 renderTasks.renderTaskDOM();
-                // and get the newly created task form the API to populate it with
+                // 7.
                 renderTasks.getTasks();
         })
-
-        // get the task from API
+        // 8.
         manageUserData.getData.getTaskByID(getTaskID)
         .then((task) => {
-            // if the task's checkbox is equal to true,
+            // 9.
             if(task.checkedBox === true){
-                // remove the task element from the page
+                // 10.
                 $(`#created-task--${getTaskID}`).remove();
             }
         })
-        // delete task from API
+        // 11.
         manageUserData.deleteData.deleteTask(getTaskID)
     }
 
     /*
-    IF USER CLICKED ON THE EDIT TASK BUTTON
+    IF USER CLICKED ON THE EDIT TASK BUTTON:
+        1. when the user clicks on the edit task button, it is creating the modal to take the user inputs from the task
+        2. 
     */
+
+   // 1.
     if(event.target.id.includes("edit-task-btn")){
         const editTaskID = event.target.id.split("--")[1];
-        console.log()
+        const editTitle = $(`#user-created-task--${editTaskID}`).text();
+        const editDate = $(`#user-created-date--${editTaskID}`).val();
+        renderTasks.editCreatedTaskModal(editTaskID, editTitle, editDate);
+        
+    }
+
+    // if user clicks on the "save changes" button
+    if(event.target.id.includes("save-edited-task")){
+        // grab value of user input
+        const newTaskID = event.target.id.split("--")[1];
+        const newEditedTask = {
+            title: $("#edit-task-input").val(),
+            date: $("#edit-date-input").val(),
+            checkedBox: false
+        }
+        manageUserData.editData.editTask(newTaskID, newEditedTask)
+        .then(()=>{
+            $("#task-container").html("");
+            renderTasks.renderTaskDOM();
+            renderTasks.getTasks();
+        })
     }
 })
 

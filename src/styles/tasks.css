@@ -1,4 +1,30 @@
-.task-pTag {
+
+/* .task-pTag {
     margin-bottom: 0;
     margin-right: 2em;
+} */
+
+.task-card span {
+    font-size: 10px !important;
+    padding-right: .25em;
+}
+
+#task-container h3 {
+    color: white;
+    padding-top: .35em;
+}
+
+#task-container .card-header {
+    background-color: #007bff;
+    justify-content: space-between;
+}
+
+#new-task-button {
+    color: white;
+    background-color: #28a745;
+}
+
+.edit-task-btn {
+    color: white;
+    background-color: #007bff;
 }

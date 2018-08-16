@@ -3,24 +3,24 @@
     PURPOSE: Holds a function that has the HTML representation of the Tasks module on the page
 
 */
-const createTaskDOM = () => {
-    $("#task-div").prepend(`
+const createTaskDOM = (editCreatedTask) => {
+    $("#task-div").html(`
 
-    <!--- this is the container being added to the dom --->
+    <!-- this is the container being added to the dom -->
 
-    <div id="task-container">
-        <div class="d-flex flex-row">
+    <div id="task-container" class="card w-75">
+        <div class="d-flex flex-row card-header">
         <h3>Tasks</h3>
-        <!--- button targets the modal below, and opens it when the button is clicked --->
+        <!-- button targets the modal below, and opens it when the button is clicked -->
 
         <button id="new-task-button" type="button" class="btn btn-info ml-3 mt-2 mb-2" data-toggle="modal" data-target="#create-new-task-modal">+</button>
         </div>
-        <div id="list-tasks-container" class="d-flex flex-column">
-            <!--- div that holds the tasks --->
-            <!--- need to create a checkbox for each task created --->
+        <div id="list-tasks-container" class="d-flex flex-column card-body">
+            <!-- div that holds the tasks -->
+            <!-- need to create a checkbox for each task created -->
         </div>
 
-        <!--- this is my modal --->
+        <!-- this is my modal -->
 
         <div id="create-new-task-modal" class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -43,6 +43,7 @@ const createTaskDOM = () => {
                 </div>
             </div>
         </div>
+
 
     </div>    
 `)
