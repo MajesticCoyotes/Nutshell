@@ -51,19 +51,13 @@
 
 
 .do-this div:first-child {
-    background-color: red;
-    font-weight: bold;
+    background-color: rgb(255, 204, 0);
+    font-weight: bold; 
     font-size: 1.4em;
+    /* width: 35em; */
 
 }
 
-
-/* whole event div */
- /* #event-div {
-    border-radius: 5px;
-    border: 1px solid gray;
-    margin: 1em
-} */
 
 /* event list styles */
 
@@ -72,22 +66,31 @@
     overflow: scroll;
     border-radius: 5px; 
     border: 1px solid gray;
-    margin: 1em
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(255, 204, 0, 0.438);
 } 
 .event:hover {
     transform: scale(1.025);
-
 }
 
 /* event form styles */
 #form {
-    padding: 1em;
+    padding: 1.3em;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid gray; */
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    margin: 1em;
-    border-radius: 5px
+    margin: 0 auto;
+    /* border-radius: 5px; */
+    background-color: rgb(153, 0, 153);
+    color: white;
+    text-shadow: 1px 1px black;
 }
+
+/* event div styles */
+
+  #event-div {
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 1em
+} 
