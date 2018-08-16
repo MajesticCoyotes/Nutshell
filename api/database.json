@@ -1,12 +1,18 @@
 {
   "users": [
     {
+<<<<<<< HEAD
       "username": "madi",
       "email": "testing@test.com",
+=======
+      "username": "iamkaylareid",
+      "email": "iamkaylareid@gmail.com",
+>>>>>>> MP-login-crap
       "photo": "",
       "id": 1
     },
     {
+<<<<<<< HEAD
       "username": "test",
       "email": "testing",
       "photo": "C:\\fakepath\\state-quarters-map.jpg",
@@ -15,6 +21,16 @@
     {
       "username": "testing",
       "email": "test",
+=======
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
+      "id": 2
+    },
+    {
+      "username": "madi",
+      "email": "madi@madi.com",
+>>>>>>> MP-login-crap
       "photo": "",
       "id": 3
     },
@@ -25,18 +41,29 @@
       "id": 4
     },
     {
+<<<<<<< HEAD
       "username": "me",
       "email": "me",
+=======
+      "username": "Jonathan",
+      "email": "j",
+>>>>>>> MP-login-crap
       "photo": "",
       "id": 5
     },
     {
+<<<<<<< HEAD
       "username": "hello",
       "email": "hello",
+=======
+      "username": "test",
+      "email": "testing",
+>>>>>>> MP-login-crap
       "photo": "",
       "id": 6
     }
   ],
+<<<<<<< HEAD
   "tasks": [
     {
       "userId": 5,
@@ -92,10 +119,59 @@
       "title": "sdfnsdgfj,hadfsnasd fuck you dist folder",
       "date": "2018-08-13",
       "checkedBox": true,
+=======
+  "tasks": [],
+  "articles": [
+    {
+      "title": "1",
+      "synopsis": "1",
+      "url": "1",
+      "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "title": "wow",
+      "synopsis": "much cool",
+      "url": "linklink",
+      "date": "Thu Aug 16 2018 13:50:40 GMT-0500 (Central Daylight Time)",
+      "userId": 6,
+      "id": 2
+    }
+  ],
+  "events": [
+    {
+      "userId": 3,
+      "title": "hello 1",
+      "date": "2018-08-07",
+      "location": "sadfasd",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "title": "hello 2",
+      "date": "2018-08-16",
+      "location": "sadfasdfasd",
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "title": "hello 3",
+      "date": "2018-08-21",
+      "location": "asdfasdf",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "title": "event 1",
+      "date": "2018-08-02",
+      "location": "asdfasd",
+>>>>>>> MP-login-crap
       "id": 9
     },
     {
       "userId": 2,
+<<<<<<< HEAD
       "title": "ONLY FOR TEST TESTING",
       "date": "2018-08-21",
       "checkedBox": true,
@@ -167,6 +243,42 @@
   ],
   "articles": [],
   "events": [],
+=======
+      "title": "event 2",
+      "date": "2018-08-16",
+      "location": "asdasdfasdfa",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "title": "event 4.4",
+      "date": "2018-08-21",
+      "location": "sadfasdfasd",
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "title": "dope",
+      "date": "2018-08-01",
+      "location": "asfdadfgsdf",
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "title": "uyjfjfj",
+      "date": "",
+      "location": "",
+      "id": 13
+    },
+    {
+      "userId": 5,
+      "title": "new.2",
+      "date": "2018-08-24",
+      "location": "new",
+      "id": 14
+    }
+  ],
+>>>>>>> MP-login-crap
   "friends": [],
   "messages": []
 }

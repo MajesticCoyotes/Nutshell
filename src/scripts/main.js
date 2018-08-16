@@ -1,12 +1,19 @@
 const landingPageDOM = require("./login/loginDOM");
 const manageUserData = require("./DataManager");
+const showEventStuff = require("./event/eventDOM");
+const clearEventForm = require("./event/renderEvents");
+const editEventModule = require("./event/editEvent")
+const registerVerify = require("./login/registerVerify")
+const loadArticleSection = require("./article/loadArticleSection")
+const userSS = require("./userSS");
 const renderTasks = require("./task/renderTasks");
 const registerNewUser = require("./login/newUserDOM");
-const saveNewUser = require("./login/saveNewUser");
 const taskSS = require("./task/taskSS");
 
+manageUserData.getData.getUsers()
 
-landingPageDOM();
+//Loads login form as soon as you land on the page
+landingPageDOM()
 
 /*
     Author: Madi
@@ -134,55 +141,98 @@ $("#task-div").click((event)=>{
     }
 })
 
+// login and register eventlisteners via madi, jonathan, and kayla
 $("#login-div").on("click", (event) => {
-    if (event.target.id === "register-user-button") {
-        $("#login-div").html(registerNewUser)
-    };
+
+
+    //If a user tries to register a new account, it will register their name and email address if they haven't been used yet
     if (event.target.id === "registerUserButton") {
-        let registerEmail = $("#register-email").val()
-        let registerUsername = $("#register-username").val()
-
         manageUserData.getData.getUsers()
-            .then((result) => {
-                let user = result.find(result => {
-                    return registerEmail === result.email || registerUsername === result.username 
-                    })
+            .then((result) => registerVerify(result))
+    };
 
-                    if (user) {
-                        alert("You suck")
-                    } else {
-                        saveNewUser()
-                        $("#login-div").html(landingPageDOM)
-                        alert("You've successfully registered. Please log in")
-                    }
-                })
-        }
     if (event.target.id === "login-button") {
         let loginEmail = $("#login-email").val()
         manageUserData.getData.getUserEmails(loginEmail)
             .then((result) => {
                 let stringifiedUserObject = JSON.stringify(result);
                 sessionStorage.setItem("userInfo", stringifiedUserObject);
+                if (!user) {
+                    alert("Username does not exist")
+                } else {
+                    //Loads all content into the article div
+                    userSS.setUserInSS()
+                        .then(() => loadArticleSection())
+                        .then(() => {
+                            showEventStuff.showEventForm()
+                            // let user = JSON.parse(sessionStorage.getItem("userInfo"));
+                            // let userId = user[0].id;
+                            manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
+                                .then(events => {
+                                    events.forEach(event => {
+                                        $("#event-list").append(showEventStuff.eventListDom(event))
+                                    })
+                                })
+                            //Hides the login form
+                            $("#login-div").html("");
+                        })
+                }
+            })
+    };
+});
+
+
+
+// author: kayla 
+// event div eventlistners 
+
+$("#event-div").on("click", (event) => {
+    if (event.target.id === "save-event-button") {
+        let user = JSON.parse(sessionStorage.getItem("userInfo"));
+        let userId = user[0].id;
+        // console.log(userId)
+        let newEvent = {
+            userId: userId,
+            title: $("#event-name").val(),
+            date: $("#event-date").val(),
+            location: $("#event-location").val()
+        }
+        clearEventForm()
+        manageUserData.saveData.saveEvent(newEvent)
+            .then(() => {
+                $("#event-list").html("")
+                manageUserData.getData.getEvents(userId)
+                    .then(events => {
+                        events.forEach(event => {
+                            $("#event-list").append(showEventStuff.eventListDom(event))
+                        })
+                    })
+                })
+
+        showEventStuff.eventListDom(newEvent);
+    }
+    if (event.target.id.includes("edit-button")) {
+        let editId = event.target.id.split("--")[1]
+        console.log("testing", editId)
+        editEventModule.editEvent(editId);
+
+    }
+    if (event.target.id.includes("save-edited-event")) {
+        let user = JSON.parse(sessionStorage.getItem("userInfo"));
+        let userId = user[0].id;
+        let saveEventId = event.target.id.split("--")[1]
+        manageUserData.editData.editEvent(saveEventId, editEventModule.saveEventChanges())
+            .then(() => {
+                document.querySelector("#event-list").innerHTML = "";
+                manageUserData.getData.getEvents(userId)
+                    .then(updatedEvents => {
+                        // console.log(updatedEvents)
+                        updatedEvents.forEach(event => {
+                            document.querySelector("#event-list").innerHTML +=
+                                showEventStuff.eventListDom(event)
+                        })
+                    })
             })
 
-            
-            manageUserData.getData.getUsers()
-            .then((result) => {
-                let email = $("#login-email").val()
-                let username = $("#login-name").val()
-
-                let user = result.find(result => {
-                    console.log(result.username)
-                    console.log(result.email)
-                    return email === result.email && username === result.username 
-                    })
-                    if (!user) {
-                        alert("Username does not exist")
-                    } else {
-                        $("#login-div").remove()
-                        renderTasks.renderTaskDOM();
-                        renderTasks.getTasks(taskSS());
-                    }
-                })
     }
 })
