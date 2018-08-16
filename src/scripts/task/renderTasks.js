@@ -18,7 +18,7 @@ const renderTasks = Object.create(null, {
     },
     getTasks: {
         value: () => {
-            manageUserData.getData.getTasks()
+            manageUserData.getData.getTasks(userId)
             .then((response) => {
                 response.forEach(task => {
                     taskModal(task.id, task.title, task.date);
