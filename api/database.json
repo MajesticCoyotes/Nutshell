@@ -29,6 +29,12 @@
       "email": "j",
       "photo": "",
       "id": 5
+    },
+    {
+      "username": "test",
+      "email": "testing",
+      "photo": "",
+      "id": 6
     }
   ],
   "tasks": [],
@@ -40,6 +46,14 @@
       "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
       "userId": 5,
       "id": 1
+    },
+    {
+      "title": "wow",
+      "synopsis": "much cool",
+      "url": "linklink",
+      "date": "Thu Aug 16 2018 13:50:40 GMT-0500 (Central Daylight Time)",
+      "userId": 6,
+      "id": 2
     }
   ],
   "events": [
