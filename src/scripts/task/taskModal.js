@@ -11,7 +11,7 @@ const createNewTask = (taskID, createdTask, createdDate) => {
     <div id="created-task--${taskID}" class="task-card w-100">
     
         <div class="card-info input-group mb-3 w-100">
-            <div class="card-body w-100">
+            <div class="card-body hover-me w-100">
                 <div id="created-task--${taskID}" class="w-100">
 
                     <p id="user-created-task--${taskID}" class="title-pTag card-body ml-2 font-weight-bold">${createdTask}</p>
