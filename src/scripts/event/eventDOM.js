@@ -5,7 +5,7 @@ const showEventForm = () => {
     $("#event-form").append(`
     <div class="d-flex">
         <h3>Up coming events</h3>
-        <button type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#event-modal">+</button>
+        <button type="button" id="add-event-button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#event-modal"><i class="fas fa-plus-square"></i></button>
     </div>
 
     <div id="event-modal" class="modal" tabindex="-1" role="dialog">

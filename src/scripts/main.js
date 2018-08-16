@@ -91,7 +91,6 @@ $("#event-div").on("click", (event) => {
     }
     if (event.target.id.includes("edit-button")) {
         let editId = event.target.id.split("--")[1]
-        console.log("testing", editId)
         editEventModule.editEvent(editId);
 
     }
