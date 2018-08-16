@@ -92,7 +92,7 @@ $("#event-div").on("click", (event) => {
     if (event.target.id.includes("edit-button")) {
         let editId = event.target.id.split("--")[1]
         editEventModule.editEvent(editId);
-
+    
     }
     if (event.target.id.includes("save-edited-event")) {
         let user = JSON.parse(sessionStorage.getItem("userInfo"));
@@ -107,9 +107,10 @@ $("#event-div").on("click", (event) => {
                         updatedEvents.forEach(event => {
                             document.querySelector("#event-list").innerHTML +=
                                 showEventStuff.eventListDom(event)
-                        })
+                                })
+                            })
                     })
-            })
-
-    }
+            
+            }
 })
+

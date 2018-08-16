@@ -37,7 +37,7 @@ const eventListDom = (newEvent) => {
                 <p id="date-${newEvent.id}">${newEvent.date}</p>
             </div>
             <p id="location-${newEvent.id}">${newEvent.location}</p>
-            <button id="edit-button--${newEvent.id}">Edit Event</button>
+            <button class="edit-button"><i class="fas fa-edit editBtn" id="edit-button--${newEvent.id}"></i></button>
         </div>`
 }
 
