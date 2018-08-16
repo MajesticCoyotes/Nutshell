@@ -67,7 +67,7 @@ $("#task-div").click((event)=>{
     if(event.target.id.includes("checkbox")){
         const getTaskID = event.target.id.split("--")[1];
         const deletePrompt = prompt("Are you sure you want to delete this task?");
-        if(deletePrompt.toUpperCase === "YES") {
+        if(deletePrompt.toUpperCase() === "YES") {
         
             let checkboxChecked = {
                 // 3.
@@ -94,6 +94,8 @@ $("#task-div").click((event)=>{
             })
             // 11.
             // manageUserData.deleteData.deleteTask(getTaskID)
+        } else {
+            event.target.checked = false;
         }
     }
        // 2.
