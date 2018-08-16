@@ -84,7 +84,7 @@
       "userId": 4,
       "title": "the quick brown fox jumps over the lazy dog.",
       "date": "2018-08-16",
-      "checkedBox": false,
+      "checkedBox": true,
       "id": 8
     },
     {
@@ -140,15 +140,29 @@
       "userId": 4,
       "title": "my button worksssss",
       "date": "2018-08-22",
-      "checkedBox": false,
+      "checkedBox": true,
       "id": 16
     },
     {
       "userId": 4,
       "title": "MY HOVER WORKS BITCHES",
       "date": "2018-08-21",
-      "checkedBox": false,
+      "checkedBox": true,
       "id": 17
+    },
+    {
+      "userId": 4,
+      "title": "feed die Bär",
+      "date": "",
+      "checkedBox": false,
+      "id": 18
+    },
+    {
+      "userId": 4,
+      "title": "hi",
+      "date": "2018-07-31",
+      "checkedBox": false,
+      "id": 19
     }
   ],
   "articles": [],
