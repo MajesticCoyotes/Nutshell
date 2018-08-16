@@ -13,7 +13,7 @@ function landingPageDOM() {
                         </div>
                         <div id="button-div">
                             <button id="login-button" class="btn btn-primary">Login</button>
-                            <button id="register-user-button" class="btn btn-primary">Register new User<i class="fas fa-user-plus"></i></button>
+                            <button id="register-user-button" class="btn btn-primary">Register new User <i class="fas fa-user-plus"></i></button>
                         </div>
                      </div>`);
 }
