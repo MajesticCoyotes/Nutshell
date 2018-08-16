@@ -66,33 +66,37 @@ $("#task-div").click((event)=>{
     // 1.
     if(event.target.id.includes("checkbox")){
         const getTaskID = event.target.id.split("--")[1];
-       // 2.
-        let checkboxChecked = {
-            // 3.
-            checkedBox: true
-        }
-        // 4.
-        manageUserData.editData.editCheckbox(getTaskID, checkboxChecked)
-        .then(()=>{
-            // 5.
-                $("#task-container").html("");
-                // 6.
-                renderTasks.renderTaskDOM();
-                // 7.
-                renderTasks.getTasks(taskSS());
-        })
-        // 8.
-        manageUserData.getData.getTaskByID(getTaskID)
-        .then((task) => {
-            // 9.
-            if(task.checkedBox === true){
-                // 10.
-                $(`#created-task--${getTaskID}`).remove();
+        const deletePrompt = prompt("Are you sure you want to delete this task?");
+        if(deletePrompt.toUpperCase === "YES") {
+        
+            let checkboxChecked = {
+                // 3.
+                checkedBox: true
             }
-        })
-        // 11.
-        manageUserData.deleteData.deleteTask(getTaskID)
+            // 4.
+            manageUserData.editData.editCheckbox(getTaskID, checkboxChecked)
+            .then(()=>{
+                // 5.
+                    $("#task-container").html("");
+                    // 6.
+                    renderTasks.renderTaskDOM();
+                    // 7.
+                    renderTasks.getTasks(taskSS());
+            })
+            // 8.
+            manageUserData.getData.getTaskByID(getTaskID)
+            .then((task) => {
+                // 9.
+                if(task.checkedBox === true){
+                    // 10.
+                    $(`#created-task--${getTaskID}`).remove();
+                }
+            })
+            // 11.
+            // manageUserData.deleteData.deleteTask(getTaskID)
+        }
     }
+       // 2.
 
     /*
     IF USER CLICKED ON THE EDIT TASK BUTTON:
