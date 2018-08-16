@@ -79,7 +79,7 @@ $("#task-div").click((event)=>{
                 // 6.
                 renderTasks.renderTaskDOM();
                 // 7.
-                renderTasks.getTasks(userID);
+                renderTasks.getTasks(taskSS);
         })
         // 8.
         manageUserData.getData.getTaskByID(getTaskID)
@@ -123,7 +123,7 @@ $("#task-div").click((event)=>{
         .then(()=>{
             $("#task-container").html("");
             renderTasks.renderTaskDOM();
-            renderTasks.getTasks(userId);
+            renderTasks.getTasks(newEditedTask.userId);
         })
     }
 })
@@ -175,7 +175,7 @@ $("#login-div").on("click", (event) => {
                     } else {
                         $("#login-div").remove()
                         renderTasks.renderTaskDOM();
-                        renderTasks.getTasks(userId);
+                        renderTasks.getTasks(taskSS);
                     }
                 })
     }
