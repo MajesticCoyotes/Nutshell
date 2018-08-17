@@ -6,6 +6,7 @@ const appendContent = () => {
     <div id="event-div">
         <div id="event-form"></div>
         <div id="event-list" class="do-this"></div>
+        <div id="messages-div"></div>
     </div>`
 }
 module.exports = appendContent;
