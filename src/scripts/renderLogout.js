@@ -20,6 +20,7 @@ let renderLogout = () => {
         $("#task-div").html("")
         $("#event-form").html("")
         $("#event-list").html("")
+        $("#messages-div").html("")
         $("#logout").html("")
     })
 }

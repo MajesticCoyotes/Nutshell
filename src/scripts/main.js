@@ -8,6 +8,7 @@ const registerNewUser = require("./login/registerNewUserDOM")
 const registerVerify = require("./login/registerVerify")
 const loadArticleSection = require("./article/loadArticleSection")
 const userSS = require("./userSS");
+const renderMessages = require("./messages/renderMessages")
 
 manageUserData.getData.getUsers()
 
@@ -52,6 +53,9 @@ $("#login-div").on("click", (event) => {
                                         $("#event-list").append(showEventStuff.eventListDom(event))
                                     })
                                 })
+                        })
+                        .then(() => {
+                            renderMessages()
                             //Hides the login form
                             $("#login-div").html("");
                         })
@@ -59,8 +63,6 @@ $("#login-div").on("click", (event) => {
             })
     };
 });
-
-
 
 // author: kayla 
 // event div eventlistners 
@@ -104,7 +106,6 @@ $("#event-div").on("click", (event) => {
                 document.querySelector("#event-list").innerHTML = "";
                 manageUserData.getData.getEvents(userId)
                     .then(updatedEvents => {
-                        // console.log(updatedEvents)
                         updatedEvents.forEach(event => {
                             document.querySelector("#event-list").innerHTML +=
                                 showEventStuff.eventListDom(event)

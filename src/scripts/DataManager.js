@@ -17,6 +17,12 @@ const getData = Object.create(null, {
             .then(response => response.json())
         }
     },
+    getMessages: {
+        value: () => {
+            return fetch("http://localhost:8088/messages")
+            .then(response => response.json())
+        }
+    },
     getArticles: {
         value: (userID) => {
             return fetch(`http://localhost:8088/users/${userID}/articles?_sort=id&_order=desc`)
@@ -68,6 +74,18 @@ const saveData = Object.create(null, {
             .then(response => response.json())
         }
     },
+    saveMessages: {
+        value: (article) => {
+        return fetch("http://localhost:8088/messages", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+                body: JSON.stringify(article)
+            })
+            .then(response => response.json())
+        }
+    },
     saveEvent: {
         value: (event) => {
         return fetch("http://localhost:8088/events", {
@@ -107,6 +125,18 @@ const editData = Object.create(null, {
             .then(response => response.json())
         }
     },
+    editMessage: {
+        value: (messageID, newMessage) => {
+            return fetch(`http://localhost:8088/messages/${messageID}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newMessage)
+            })
+            .then(response => response.json())
+        }
+    },
     editEvent: {
         value: (eventId, newEvent) => {
             return fetch(`http://localhost:8088/events/${eventId}`, {
@@ -133,6 +163,14 @@ const deleteData = Object.create(null, {
     deleteArticle: {
         value: (articleID) => {
             return fetch(`http://localhost:8088/articles/${articleID}`, {
+                method: "DELETE"
+            })
+            .then(response => response.json())
+        }
+    },
+    deleteMessage: {
+        value: (messageID) => {
+            return fetch(`http://localhost:8088/messages/${messageID}`, {
                 method: "DELETE"
             })
             .then(response => response.json())
