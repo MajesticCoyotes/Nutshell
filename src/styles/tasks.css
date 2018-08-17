@@ -9,9 +9,9 @@
                  0 1px 5px 0 rgba(0, 0, 0, 0.12);
  }
 
- .hover-me:hover {
+ /* .hover-me:hover {
     transform: scale(1.025);
- }
+ } */
  
  .task-card span {
      padding-right: .25em;
@@ -23,13 +23,13 @@
  }
  
  #task-container .card-header {
-     background-color: #007bff;
+     background-color: #ca347a;
      justify-content: space-between;
  }
  
  #new-task-button {
     color: white;
-    background-color: rgb(106, 219, 0);
+    background-color: #dd7fab;
     border: none;
     height: 40px;
     width: 40px;
@@ -41,7 +41,7 @@
  #new-task-button:hover {
     border-radius: 50%;
     transform: scale(1.2);
-    background-color: rgba(106, 219, 0, 0.651);
+    background-color: #daaec3;
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
 }
 
@@ -52,5 +52,11 @@
  
  .edit-task-btn {
      color: white;
-     background-color: #007bff;
+     background-color: #dd7fab;
  }
+
+ .edit-task-btn:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 7px 12px -8px rgb(136, 135, 135);
+    background-color: #ca347a;
+}

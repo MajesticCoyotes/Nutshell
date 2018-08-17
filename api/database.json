@@ -35,6 +35,12 @@
       "email": "hello",
       "photo": "",
       "id": 6
+    },
+    {
+      "username": "Madi",
+      "email": "madi",
+      "photo": "",
+      "id": 7
     }
   ],
   "tasks": [
@@ -198,6 +204,48 @@
       "date": "",
       "checkedBox": false,
       "id": 24
+    },
+    {
+      "userId": 4,
+      "title": "werther;ituhq3t;iuhqherhiurhiuhrehrehireltjkwherlhflkefhkjwe",
+      "date": "2018-08-14",
+      "checkedBox": false,
+      "id": 25
+    },
+    {
+      "userId": 7,
+      "title": "Feed the bear twice",
+      "date": "2018-08-18",
+      "checkedBox": false,
+      "id": 26
+    },
+    {
+      "userId": 7,
+      "title": "totally works",
+      "date": "2018-08-15",
+      "checkedBox": false,
+      "id": 27
+    },
+    {
+      "userId": 7,
+      "title": "howdy",
+      "date": "2018-08-09",
+      "checkedBox": false,
+      "id": 28
+    },
+    {
+      "userId": 7,
+      "title": "There are so many tasks",
+      "date": "2018-08-20",
+      "checkedBox": false,
+      "id": 29
+    },
+    {
+      "userId": 7,
+      "title": "task number 134",
+      "date": "2018-08-23",
+      "checkedBox": false,
+      "id": 30
     }
   ],
   "articles": [
@@ -216,6 +264,22 @@
       "date": "Thu Aug 16 2018 19:12:35 GMT-0500 (Central Daylight Time)",
       "userId": 4,
       "id": 3
+    },
+    {
+      "title": "me article",
+      "synopsis": "this article show only show up for meeeeeee",
+      "url": "aqwr3eds",
+      "date": "Thu Aug 16 2018 19:30:26 GMT-0500 (Central Daylight Time)",
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "title": "My First Article",
+      "synopsis": "It's pretty cool",
+      "url": "",
+      "date": "Fri Aug 17 2018 08:42:25 GMT-0500 (Central Daylight Time)",
+      "userId": 7,
+      "id": 5
     }
   ],
   "events": [
@@ -239,6 +303,13 @@
       "date": "2018-08-13",
       "location": "NSS",
       "id": 3
+    },
+    {
+      "userId": 7,
+      "title": "Nutshell",
+      "date": "2018-08-20",
+      "location": "NSS",
+      "id": 4
     }
   ],
   "friends": [],

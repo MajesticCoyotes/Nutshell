@@ -7,7 +7,7 @@ const loadUserFromSS = require("./userSS")
 let renderLogout = () => {
     document.querySelector("#logout").innerHTML = `
     <div class="logout-header">
-    <p>Welcome to Nutshell, ${loadUserFromSS.loadUserNameFromSS()}</p>
+    <p>Welcome to Nutshell, ${loadUserFromSS.loadUserNameFromSS()}!</p>
     <button id=\"logoutButton\" class=\"btn btn-outline-light\">Logout</button>
     </div
     `
