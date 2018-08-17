@@ -71,7 +71,6 @@ $("body").on("click", (event) => {
     if (event.target.id === "save-event-button") {
         let user = JSON.parse(sessionStorage.getItem("userInfo"));
         let userId = user[0].id;
-        // console.log(userId)
         let newEvent = {
             userId: userId,
             title: $("#event-name").val(),
@@ -92,7 +91,6 @@ $("body").on("click", (event) => {
         showEventStuff.eventListDom(newEvent);
     }
     if (event.target.id.includes("edit-button")) {
-        console.log(event)
         let editId = event.target.id.split("--")[1]
         editEventModule.editEvent(editId);
     
