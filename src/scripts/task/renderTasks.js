@@ -5,6 +5,7 @@
 
 const manageUserData = require("../DataManager");
 const editTaskModal = require("./editTaskModal");
+const deleteTaskModal = require("./deleteTaskModal");
 const taskModal = require("./taskModal");
 const taskDOM = require("./taskDOM");
 
@@ -21,6 +22,12 @@ const renderTasks = Object.create(null, {
     editCreatedTaskModal: {
         value: (editTaskID, editTitle, editDate) => {
             editTaskModal(editTaskID, editTitle, editDate);
+        }
+
+    },
+    deleteTask: {
+        value: (taskID) => {
+            deleteTaskModal(taskID);
         }
 
     },

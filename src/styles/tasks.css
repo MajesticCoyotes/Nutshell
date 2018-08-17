@@ -19,12 +19,18 @@
  
  #task-container h3 {
      color: white;
+     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
      padding-top: .35em;
  }
  
  #task-container .card-header {
      background-color: #ca347a;
      justify-content: space-between;
+ }
+
+ #list-tasks-container {
+     max-height: 700px;
+     overflow: scroll;
  }
  
  #new-task-button {
