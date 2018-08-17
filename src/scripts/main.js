@@ -192,7 +192,7 @@ $("#login-div").on("click", (event) => {
 
 
 
-// author: kayla 
+// author: kayla reid
 // event div eventlistners 
 
 $("body").on("click", (event) => {
@@ -239,6 +239,14 @@ $("body").on("click", (event) => {
                                 })
                             })
                     })
-            
-            }
+
+    }
+    // adding delete button
+    if (event.target.id.includes("delete-button")){
+        let deleteId = event.target.id.split("--")[1]
+        manageUserData.deleteData.deleteEvent(deleteId)
+        .then(() =>{
+            event.target.parentNode.parentNode.remove();
+        })
+    }
 })

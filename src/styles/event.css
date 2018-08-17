@@ -31,6 +31,26 @@
     background-color: dimgray;
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
 }
+
+/* delete button */
+.delete-button {
+    background-color: rgb(197, 0, 0);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+    color: white;
+}
+
+.delete-button:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgb(185, 0, 0);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
 /* save edited changes button */
 .save-changes-button {
     background-color: rgb(7, 107, 255);
@@ -91,3 +111,6 @@
     max-height: 500px;
     overflow: scroll;
 } 
+.hr-line {
+    background-color: dimgray;
+}
