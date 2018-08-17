@@ -71,7 +71,7 @@
 
 
 .do-this div:first-child {
-    background-color: rgb(255, 204, 0);
+    background-color: rgba(105, 105, 105, 0.486);
     font-weight: bold; 
     font-size: 1.4em;
     /* width: 35em; */
@@ -85,7 +85,7 @@
     border: 1px solid gray;
     margin: 1em;
     padding: 1em;
-    background-color: rgba(255, 204, 0, 0.438);
+    /* background-color: rgba(255, 204, 0, 0.438); */
     box-shadow: 1px 1px black;
 } 
 .event:hover {
