@@ -1,0 +1,116 @@
+/* add event button */
+#add-event-button {
+    background-color: rgb(224, 142, 224);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+}
+#add-event-button:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgb(106, 219, 0);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+/* edit button */
+.edit-button {
+    background-color: dimgray;
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+    color: white;
+}
+.edit-button:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: dimgray;
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
+/* delete button */
+.delete-button {
+    background-color: rgb(197, 0, 0);
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+    color: white;
+}
+
+.delete-button:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgb(185, 0, 0);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
+/* save edited changes button */
+.save-changes-button {
+    background-color: rgb(7, 107, 255);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+    color: white;
+}
+.save-changes-button:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgba(7, 106, 255, 0.603);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
+
+.do-this div:first-child {
+    background-color: rgba(105, 105, 105, 0.226);
+    font-weight: bold; 
+    font-size: 1.4em;
+}
+
+
+/* event list styles */
+.event {
+    border-radius: 5px; 
+    border: 1px solid gray;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 6px 3px -6px black;
+} 
+.event:hover {
+    transform: scale(1.025);
+}
+
+/* event form styles */
+#form {
+    padding: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(153, 0, 153);
+    color: white;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* event div styles */
+  #event-div {
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 1em;
+
+} 
+.hr-line {
+    background-color: dimgray;
+}
+#event-list {
+    max-height: 500px;
+    overflow: scroll;
+}

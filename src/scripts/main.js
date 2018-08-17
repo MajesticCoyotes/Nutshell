@@ -6,20 +6,22 @@ const editEventModule = require("./event/editEvent")
 const registerVerify = require("./login/registerVerify")
 const loadArticleSection = require("./article/loadArticleSection")
 const userSS = require("./userSS");
+const appendContent = require("./appendDivs");
+const renderMessages = require("./messages/renderMessages")
 const renderTasks = require("./task/renderTasks");
 const registerNewUser = require("./login/registerNewUserDOM");
 const taskSS = require("./task/taskSS");
 
-manageUserData.getData.getUsers()
+// manageUserData.getData.getUsers()
 
 //Loads login form as soon as you land on the page
-landingPageDOM()
+landingPageDOM();
 
 /*
     Author: Madi
     +Added an event listener on the task div
 */
-$("body").click((event) => {
+$("body").click((event)=>{
     /*
     IF THE USER CLICKED ON THE SAVE TASK BUTTON:
         1. if the event.target.id is "save-new-task-btn"
@@ -159,50 +161,49 @@ $("#login-div").on("click", (event) => {
 
     if (event.target.id === "login-button") {
         manageUserData.getData.getUsers()
-            .then((result) => {
-                let user = result.find(result => {
-
-                    //Checks to see if the info entered is in the database
-                    return $("#login-email").val() === result.email && $("#login-name").val() === result.username
-                })
-                if (!user) {
-                    alert("Username does not exist")
-                } else {
-                    //Loads all content into the article div
-                    userSS.setUserInSS()
-                        .then(() => loadArticleSection())
-                        .then(() => {
-
-                            showEventStuff.showEventForm()
-                            // let user = JSON.parse(sessionStorage.getItem("userInfo"));
-                            // let userId = user[0].id;
-                            manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
-                                .then(events => {
-                                    events.forEach(event => {
-                                        $("#event-list").append(showEventStuff.eventListDom(event))
-                                    })
-                                })
-                            //Hides the login form
-                            $("#login-div").html("");
-                            renderTasks.renderTaskDOM();
-                            renderTasks.getTasks(taskSS());
-                        })
-                }
+        .then((result) => {
+            let user = result.find(result => {
+                
+                //Checks to see if the info entered is in the database
+                return $("#login-email").val() === result.email && $("#login-name").val() === result.username
+            })
+            if (!user) {
+                alert("Username does not exist")
+            } else {
+                //Loads all content into the article div
+                userSS.setUserInSS()
+                .then(() => {
+                    //Hides the login form
+                    $("#login-div").html("")
+                    $("body").removeClass("bodyBackground")
+                    appendContent()
+                    loadArticleSection()
+                    renderMessages()
+                    renderTasks.renderTaskDOM();
+                    renderTasks.getTasks(taskSS());
+                    showEventStuff.showEventForm()
+                    manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
+                        .then(events => {
+                            events.forEach(event => {
+                                $("#event-list").append(showEventStuff.eventListDom(event))
+                            })
+                })        
             })
     };
 });
+}
+})
 
 
 
 
-// author: kayla 
+// author: kayla reid
 // event div eventlistners 
 
-$("#event-div").on("click", (event) => {
+$("body").on("click", (event) => {
     if (event.target.id === "save-event-button") {
         let user = JSON.parse(sessionStorage.getItem("userInfo"));
         let userId = user[0].id;
-        // console.log(userId)
         let newEvent = {
             userId: userId,
             title: $("#event-name").val(),
@@ -225,9 +226,8 @@ $("#event-div").on("click", (event) => {
     }
     if (event.target.id.includes("edit-button")) {
         let editId = event.target.id.split("--")[1]
-        console.log("testing", editId)
         editEventModule.editEvent(editId);
-
+    
     }
     if (event.target.id.includes("save-edited-event")) {
         let user = JSON.parse(sessionStorage.getItem("userInfo"));
@@ -238,13 +238,43 @@ $("#event-div").on("click", (event) => {
                 document.querySelector("#event-list").innerHTML = "";
                 manageUserData.getData.getEvents(userId)
                     .then(updatedEvents => {
-                        // console.log(updatedEvents)
                         updatedEvents.forEach(event => {
                             document.querySelector("#event-list").innerHTML +=
                                 showEventStuff.eventListDom(event)
-                        })
+                                })
+                            })
                     })
-            })
 
     }
+    // adding delete button
+    if (event.target.id.includes("delete-button")){
+        let deleteId = event.target.id.split("--")[1]
+        manageUserData.deleteData.deleteEvent(deleteId)
+        .then(() =>{
+            event.target.parentNode.parentNode.remove();
+        })
+    }
 })
+
+const storageChecker = () => {
+    if (userSS.loadUserIDFromSS() === null){
+        landingPageDOM()
+    } else {
+        userSS.loadUserIDFromSS()
+                    $("#login-div").html("")
+                    $("body").removeClass("bodyBackground")
+                    appendContent()
+                    loadArticleSection()
+                    renderMessages()
+                    renderTasks.renderTaskDOM();
+                    renderTasks.getTasks(taskSS());
+                    showEventStuff.showEventForm()
+                    manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
+                        .then(events => {
+                            events.forEach(event => {
+                                $("#event-list").append(showEventStuff.eventListDom(event))
+                            })
+                })        
+    }
+}
+storageChecker();

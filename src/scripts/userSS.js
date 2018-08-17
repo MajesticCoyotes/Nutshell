@@ -12,7 +12,6 @@ const setUserInSS = () => {
 })
 }
 
-
 const loadUserIDFromSS = () => {
     let stringifiedUser = sessionStorage.getItem("userInfo");
     let parsedUser = JSON.parse(stringifiedUser);

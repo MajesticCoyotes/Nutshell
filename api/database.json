@@ -1,38 +1,38 @@
 {
   "users": [
     {
-      "username": "madi",
-      "email": "testing@test.com",
+      "username": "iamkaylareid",
+      "email": "iamkaylareid@gmail.com",
       "photo": "",
       "id": 1
     },
     {
-      "username": "test",
-      "email": "testing",
-      "photo": "C:\\fakepath\\state-quarters-map.jpg",
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
       "id": 2
     },
     {
-      "username": "testing",
-      "email": "test",
+      "username": "madi",
+      "email": "madi@madi.com",
       "photo": "",
       "id": 3
     },
     {
-      "username": "",
-      "email": "",
-      "photo": "",
-      "id": 4
-    },
-    {
-      "username": "me",
-      "email": "me",
+      "username": "Jonathan",
+      "email": "j",
       "photo": "",
       "id": 5
     },
     {
-      "username": "hello",
-      "email": "hello",
+      "username": "kayla",
+      "email": "kayla@me.com",
+      "photo": "C:\\fakepath\\9 3:4.JPG",
+      "id": 6
+    },
+    {
+      "username": "new",
+      "email": "new",
       "photo": "",
       "id": 6
     },
@@ -45,291 +45,239 @@
   ],
   "tasks": [
     {
-      "userId": 7,
-      "title": "Feed the bear",
-      "date": "2018-08-08",
-      "checkedBox": true,
-      "completed": true,
+      "userId": 8,
+      "title": "new tasks bitches",
+      "date": "2018-08-09",
+      "checkedBox": false,
       "id": 1
     },
     {
       "userId": 7,
-      "title": "sdfgashdfjlkasdf",
-      "date": "2018-08-13",
+      "title": "Sup",
+      "date": "2018-08-15",
       "checkedBox": true,
       "completed": true,
       "id": 2
     },
     {
       "userId": 7,
-      "title": "Do the laundry",
-      "date": "2018-08-14",
+      "title": "Doggie bath",
+      "date": "2018-08-13",
       "checkedBox": true,
       "completed": true,
       "id": 3
     },
     {
       "userId": 7,
-      "title": "All of my modals work!",
-      "date": "2018-08-16",
+      "title": "DO COOL THINGS",
+      "date": "2018-08-23",
       "checkedBox": true,
-      "id": 4,
-      "completed": true
+      "completed": true,
+      "id": 4
     },
     {
       "userId": 7,
-      "title": "Let's make a new task!",
-      "date": "2018-08-06",
+      "title": "bootstrap",
+      "date": "2018-08-08",
       "checkedBox": true,
       "completed": true,
       "id": 5
     },
     {
       "userId": 7,
-      "title": "Let's do this tomorrow",
-      "date": "2018-08-18",
-      "checkedBox": true,
-      "completed": true,
+      "title": "pink buttons",
+      "date": "2018-08-22",
+      "checkedBox": false,
+      "completed": false,
       "id": 6
     },
     {
       "userId": 7,
-      "title": "Feed the bear twice",
-      "date": "2018-08-16",
-      "checkedBox": true,
-      "completed": true,
+      "title": "nap",
+      "date": "2018-08-13",
+      "checkedBox": false,
+      "completed": false,
       "id": 7
-    },
-    {
-      "userId": 4,
-      "title": "do the stuff",
-      "date": "2018-08-14",
-      "checkedBox": false,
-      "completed": false,
-      "id": 8
-    },
-    {
-      "userId": 4,
-      "title": "Feed the bear 🐻",
-      "date": "",
-      "checkedBox": false,
-      "id": 9
-    },
-    {
-      "userId": 4,
-      "title": "This HAS to be DONE!! ✔️",
-      "date": "2018-08-18",
-      "checkedBox": false,
-      "id": 10
-    },
-    {
-      "userId": 4,
-      "title": "Don't forget this! 🌟",
-      "date": "2018-08-18",
-      "checkedBox": false,
-      "completed": false,
-      "id": 11
-    },
-    {
-      "userId": 7,
-      "title": "Feed the bear",
-      "date": "2018-08-16",
-      "checkedBox": true,
-      "completed": true,
-      "id": 12
-    },
-    {
-      "userId": 7,
-      "title": "Checkbox changes",
-      "date": "2018-08-02",
-      "checkedBox": true,
-      "completed": true,
-      "id": 13
-    },
-    {
-      "userId": 7,
-      "title": "Let's do this thing tomorrow!",
-      "date": "2018-08-18",
-      "checkedBox": true,
-      "completed": true,
-      "id": 14
-    },
-    {
-      "userId": 7,
-      "title": "make this thing scroooooolllllllll",
-      "date": "2018-08-08",
-      "checkedBox": true,
-      "completed": true,
-      "id": 15
-    },
-    {
-      "userId": 7,
-      "title": "Add some more to make it scrollllll",
-      "date": "2018-08-15",
-      "checkedBox": true,
-      "completed": true,
-      "id": 16
-    },
-    {
-      "userId": 7,
-      "title": "Make sure to do this by TOMORROW! 🌟",
-      "date": "2018-08-18",
-      "checkedBox": false,
-      "completed": false,
-      "id": 17
-    },
-    {
-      "userId": 7,
-      "title": "Feed the bear! 🐻",
-      "date": "2018-08-19",
-      "checkedBox": false,
-      "completed": false,
-      "id": 18
-    },
-    {
-      "userId": 7,
-      "title": "Do this",
-      "date": "2018-08-16",
-      "checkedBox": true,
-      "completed": true,
-      "id": 19
-    },
-    {
-      "userId": 7,
-      "title": "sdnfgjsa",
-      "date": "",
-      "checkedBox": true,
-      "completed": true,
-      "id": 20
-    },
-    {
-      "userId": 7,
-      "title": "dfsf",
-      "date": "",
-      "checkedBox": true,
-      "completed": true,
-      "id": 21
-    },
-    {
-      "userId": 7,
-      "title": "Binge watch my TV show",
-      "date": "2018-08-17",
-      "checkedBox": false,
-      "id": 22
-    },
-    {
-      "userId": 7,
-      "title": "Code today",
-      "date": "2018-08-22",
-      "checkedBox": false,
-      "completed": false,
-      "id": 23
-    },
-    {
-      "userId": 7,
-      "title": "Do laundry",
-      "date": "2018-08-15",
-      "checkedBox": false,
-      "completed": false,
-      "id": 24
-    },
-    {
-      "userId": 7,
-      "title": "Hey I already did that",
-      "date": "2018-08-15",
-      "checkedBox": false,
-      "completed": false,
-      "id": 25
-    },
-    {
-      "userId": 7,
-      "title": "DO SOMETHING ELSE",
-      "date": "2018-08-02",
-      "checkedBox": false,
-      "completed": false,
-      "id": 26
     }
   ],
   "articles": [
     {
-      "title": "test",
-      "synopsis": "testing",
-      "url": "asgrw34arwefafdc",
-      "date": "Thu Aug 16 2018 19:00:06 GMT-0500 (Central Daylight Time)",
+      "title": "1",
+      "synopsis": "1",
+      "url": "1",
+      "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asf",
+      "url": "asdf",
+      "date": "Thu Aug 16 2018 11:10:29 GMT-0500 (Central Daylight Time)",
       "userId": 2,
       "id": 2
     },
     {
-      "title": "so fancy",
-      "synopsis": "so many modals",
-      "url": "bootstrap suckas",
-      "date": "Thu Aug 16 2018 19:12:35 GMT-0500 (Central Daylight Time)",
-      "userId": 4,
-      "id": 3
-    },
-    {
-      "title": "me article",
-      "synopsis": "this article show only show up for meeeeeee",
-      "url": "aqwr3eds",
-      "date": "Thu Aug 16 2018 19:30:26 GMT-0500 (Central Daylight Time)",
-      "userId": 5,
+      "title": "new stuff",
+      "synopsis": "sdafsd",
+      "url": "asdfasdfsdgsd",
+      "date": "Thu Aug 16 2018 18:56:23 GMT-0500 (Central Daylight Time)",
+      "userId": 6,
       "id": 4
     },
     {
-      "title": "My First Article",
-      "synopsis": "It's pretty cool",
-      "url": "",
-      "date": "Fri Aug 17 2018 08:42:25 GMT-0500 (Central Daylight Time)",
-      "userId": 7,
+      "title": "more new stuff",
+      "synopsis": "asdffdghfg",
+      "url": "dfghtrgdfg",
+      "date": "Thu Aug 16 2018 18:56:36 GMT-0500 (Central Daylight Time)",
+      "userId": 6,
       "id": 5
     },
     {
-      "title": "sdfjhgalkjsd",
-      "synopsis": "345sdfgac 34avw ",
-      "url": "2",
-      "date": "Fri Aug 17 2018 09:51:35 GMT-0500 (Central Daylight Time)",
-      "userId": 7,
+      "title": "sfd",
+      "synopsis": "asdf",
+      "url": "asdf",
+      "date": "Fri Aug 17 2018 13:29:26 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
       "id": 6
     },
     {
-      "title": "fhxtdgfzdc",
-      "synopsis": "vgdfsgvce",
-      "url": "cdgsvdgdfgdsg",
-      "date": "Fri Aug 17 2018 09:51:41 GMT-0500 (Central Daylight Time)",
-      "userId": 7,
+      "title": "asdf",
+      "synopsis": "asdf",
+      "url": "asdf",
+      "date": "Fri Aug 17 2018 13:29:32 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
       "id": 7
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asdfas",
+      "url": "df",
+      "date": "Fri Aug 17 2018 13:29:36 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "title": "Wow I'm cool",
+      "synopsis": "like totally",
+      "url": "gtygvhtre ",
+      "date": "Fri Aug 17 2018 14:52:06 GMT-0500 (Central Daylight Time)",
+      "userId": 8,
+      "id": 9
+    },
+    {
+      "title": "boop",
+      "synopsis": "boopy boop",
+      "url": "awlyegrfiaerhgas",
+      "date": "Fri Aug 17 2018 15:15:01 GMT-0500 (Central Daylight Time)",
+      "userId": 7,
+      "id": 10
     }
   ],
   "events": [
     {
-      "userId": 4,
-      "title": "dertw4arwafd",
-      "date": "",
-      "location": "343qt4grfdAWEds",
-      "id": 1
+      "userId": 3,
+      "title": "hello 1",
+      "date": "2018-08-07",
+      "location": "sadfasd",
+      "id": 6
     },
     {
-      "userId": 4,
-      "title": "shit works",
-      "date": "",
-      "location": "NSS",
-      "id": 2
+      "userId": 3,
+      "title": "hello 2",
+      "date": "2018-08-16",
+      "location": "sadfasdfasd",
+      "id": 7
     },
     {
-      "userId": 4,
-      "title": "shit works again forgot date first time",
-      "date": "2018-08-13",
-      "location": "NSS",
-      "id": 3
+      "userId": 3,
+      "title": "hello 3",
+      "date": "2018-08-21",
+      "location": "asdfasdf",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "title": "event 1.3",
+      "date": "2018-08-01",
+      "location": "asdfasd",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "title": "event 2",
+      "date": "2018-08-16",
+      "location": "asdasdfasdfa",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "title": "event 4.4",
+      "date": "2018-08-21",
+      "location": "sadfasdfasd",
+      "id": 11
+    },
+    {
+      "userId": 5,
+      "title": "new.2",
+      "date": "2018-08-24",
+      "location": "new",
+      "id": 14
+    },
+    {
+      "userId": 6,
+      "title": "NSS meet up",
+      "date": "2018-08-22",
+      "location": "sddfgsdf",
+      "id": 17
+    },
+    {
+      "userId": 6,
+      "title": "nashville hipster meet up",
+      "date": "2018-08-08",
+      "location": "sfgdsfgsdfg",
+      "id": 18
+    },
+    {
+      "userId": 5,
+      "title": "Event",
+      "date": "",
+      "location": "location",
+      "id": 20
+    },
+    {
+      "userId": 8,
+      "title": "Be totally rad",
+      "date": "2018-08-21",
+      "location": "NSS yo",
+      "id": 21
     },
     {
       "userId": 7,
-      "title": "Nutshell",
-      "date": "2018-08-20",
-      "location": "NSS",
-      "id": 4
+      "title": "stylin",
+      "date": "2018-08-13",
+      "location": "at nss",
+      "id": 22
     }
   ],
   "friends": [],
-  "messages": []
+  "messages": [
+    {
+      "message": "It's mine now, bitch",
+      "username": "Madi",
+      "id": 1
+    },
+    {
+      "message": "Hi",
+      "date": "Fri Aug 17 2018 14:52:22 GMT-0500 (Central Daylight Time)",
+      "username": "Madi",
+      "id": 2
+    },
+    {
+      "message": "Wassup",
+      "date": "Fri Aug 17 2018 15:29:11 GMT-0500 (Central Daylight Time)",
+      "username": "Madi",
+      "id": 3
+    }
+  ]
 }
