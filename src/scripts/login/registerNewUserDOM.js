@@ -8,7 +8,7 @@ const registerNewUser = () => {
         <input required type="text" id="register-username"><br>
 
         <label required for="register-email">Email Address:</label>
-        <input required type="text" id="register-email"><br>
+        <input required type="email" id="register-email"><br>
 
         <button id="registerUserButton" class="btn btn-primary">Create New User</button>
     </fieldset>
