@@ -11,7 +11,7 @@
 #add-event-button:hover {
     border-radius: 50%;
     transform: scale(1.2);
-    background-color: rgba(106, 219, 0, 0.651);
+    background-color: rgba(106, 219, 0, 0.87);
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
 }
 /* edit button */
@@ -31,6 +31,26 @@
     background-color: dimgray;
     box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
 }
+
+/* delete button */
+.delete-button {
+    background-color: rgb(197, 0, 0);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    transform: scale(1);
+    transition: all .3s;
+    color: white;
+}
+
+.delete-button:hover {
+    border-radius: 50%;
+    transform: scale(1.2);
+    background-color: rgb(185, 0, 0);
+    box-shadow: 0px 13px 25px -4px rgba(77,77,77,1);
+}
+
 /* save edited changes button */
 .save-changes-button {
     background-color: rgb(7, 107, 255);
@@ -51,11 +71,9 @@
 
 
 .do-this div:first-child {
-    background-color: rgb(255, 204, 0);
+    background-color: rgba(105, 105, 105, 0.226);
     font-weight: bold; 
     font-size: 1.4em;
-    /* width: 35em; */
-
 }
 
 
@@ -65,8 +83,7 @@
     border: 1px solid gray;
     margin: 1em;
     padding: 1em;
-    background-color: rgba(255, 204, 0, 0.438);
-    box-shadow: 1px 1px black;
+    box-shadow: 0 6px 3px -6px black;
 } 
 .event:hover {
     transform: scale(1.025);
@@ -80,7 +97,7 @@
     margin: 0 auto;
     background-color: rgb(153, 0, 153);
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* event div styles */
@@ -88,6 +105,12 @@
     border-radius: 5px;
     border: 1px solid gray;
     margin: 1em;
+
+} 
+.hr-line {
+    background-color: dimgray;
+}
+#event-list {
     max-height: 500px;
     overflow: scroll;
-} 
+}

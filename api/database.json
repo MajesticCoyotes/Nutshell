@@ -19,12 +19,6 @@
       "id": 3
     },
     {
-      "username": "",
-      "email": "",
-      "photo": "",
-      "id": 4
-    },
-    {
       "username": "Jonathan",
       "email": "j",
       "photo": "",
@@ -37,22 +31,7 @@
       "id": 6
     }
   ],
-  "tasks": [
-    {
-      "userId": 4,
-      "title": "asdfsdfasdfasdfasd",
-      "date": "",
-      "checkedBox": false,
-      "id": 1
-    },
-    {
-      "userId": 4,
-      "title": "sadfasdf",
-      "date": "",
-      "checkedBox": false,
-      "id": 2
-    }
-  ],
+  "tasks": [],
   "articles": [
     {
       "title": "1",
@@ -61,22 +40,6 @@
       "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
       "userId": 5,
       "id": 1
-    },
-    {
-      "title": "asdf",
-      "synopsis": "asf",
-      "url": "asdf",
-      "date": "Thu Aug 16 2018 11:10:29 GMT-0500 (Central Daylight Time)",
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "title": "sdfg",
-      "synopsis": "sdfg",
-      "url": "sdgfsdfgsdfgsdfgsdfgsdfg",
-      "date": "Thu Aug 16 2018 11:44:54 GMT-0500 (Central Daylight Time)",
-      "userId": 4,
-      "id": 3
     },
     {
       "title": "new stuff",
@@ -93,6 +56,30 @@
       "date": "Thu Aug 16 2018 18:56:36 GMT-0500 (Central Daylight Time)",
       "userId": 6,
       "id": 5
+    },
+    {
+      "title": "sfd",
+      "synopsis": "asdf",
+      "url": "asdf",
+      "date": "Fri Aug 17 2018 13:29:26 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asdf",
+      "url": "asdf",
+      "date": "Fri Aug 17 2018 13:29:32 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asdfas",
+      "url": "df",
+      "date": "Fri Aug 17 2018 13:29:36 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 8
     }
   ],
   "events": [
@@ -139,39 +126,11 @@
       "id": 11
     },
     {
-      "userId": 4,
-      "title": "dope2.0",
-      "date": "2018-08-01",
-      "location": "asfdadfgsdfbkjbkcfgxfg",
-      "id": 12
-    },
-    {
-      "userId": 4,
-      "title": "uyjfjfj.2",
-      "date": "2018-08-17",
-      "location": "nbjkbjbjj",
-      "id": 13
-    },
-    {
       "userId": 5,
       "title": "new.2",
       "date": "2018-08-24",
       "location": "new",
       "id": 14
-    },
-    {
-      "userId": 4,
-      "title": "1.2",
-      "date": "2018-07-12",
-      "location": "asdfadfgsdfgsdfgasdfasdfsdf",
-      "id": 15
-    },
-    {
-      "userId": 4,
-      "title": "yo yo",
-      "date": "2018-08-25",
-      "location": "dfgsdfgsd",
-      "id": 16
     },
     {
       "userId": 6,
@@ -191,13 +150,7 @@
   "friends": [],
   "messages": [
     {
-      "message": " helloasDASDFSD",
-      "username": "",
-      "id": 1
-    },
-    {
-      "message": "FGHDFGH",
-      "date": "Fri Aug 17 2018 09:31:16 GMT-0500 (Central Daylight Time)",
+      "message": " FGHDFGH",
       "username": "",
       "id": 3
     },
