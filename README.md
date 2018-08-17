@@ -5,10 +5,12 @@ Nutshell is a highly sophisticated social networking platform for keeping your l
 
 ## Usage
 1. Clone or download the nutshell repository to your local machine
-2. Go into src directory, then into the lib directory
+2. cd `src/lib`
 3. Run `npm install`
 4. Once npm install is done, run `grunt`
-5. Navigate to the API folder `../../api`
+5. cd `../../api`
 6. Run `json-server -p 8088 -w database.json` to get the database running locally
-7. Navigate to the dist folder `../dist`
+7. cd `../dist`
 8. Initiate home server `hs -o` to launch Nutshell in your browser
+
+This project uses grunt, json server, and browserify
