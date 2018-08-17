@@ -22,7 +22,8 @@
         `<input id="edited-event-name" type="text" value="${titleText}">
         <input id="edited-event-date" type="date" value="${dateText}">
         <input id="edited-event-location" type="text" value="${locationText}">
-        <button id="save-edited-event--${editId}">Save Changes</button>`
+        <button class="save-changes-button"><i class="far fa-save" id="save-edited-event--${editId}"></i></button>`
+        
 }
 
 module.exports = {editEvent, saveEventChanges};

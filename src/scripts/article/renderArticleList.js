@@ -8,15 +8,15 @@ const saveNewArticle = require("./saveNewArticle")
 const loadUserFromSS = require("../userSS")
 
 
-const articleDiv = document.querySelector("#article-div")
-const articleHeader = document.createElement("div")
-articleHeader.id = "articleHeader"
-
-const articleList = document.createElement("div")
-articleList.id = "articleList"
 
 
 const renderArticles = (userID) => {
+    const articleDiv = document.querySelector("#article-div")
+    const articleHeader = document.createElement("div")
+    articleHeader.id = "articleHeader"
+    
+    const articleList = document.createElement("div")
+    articleList.id = "articleList"
     
     articleDiv.appendChild(articleHeader)
     articleDiv.appendChild(articleList)

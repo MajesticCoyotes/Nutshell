@@ -9,18 +9,18 @@ const deleteMessages = require("./deleteMessages")
 const editMessageButton = require("./editMessageButtons")
 
 
-const messagesDiv = document.querySelector("#messages-div")
-
-const messagesHeader = document.createElement("div")
-messagesHeader.id = "messagesHeader"
-
-const mList = document.createElement("div")
-mList.id = "messagesList"
-
-const messagesForm = document.createElement("div")
-messagesForm.id = "messagesForm"
 
 const renderMessages = () => {
+    const messagesDiv = document.querySelector("#messages-div")
+    
+    const messagesHeader = document.createElement("div")
+    messagesHeader.id = "messagesHeader"
+    
+    const mList = document.createElement("div")
+    mList.id = "messagesList"
+    
+    const messagesForm = document.createElement("div")
+    messagesForm.id = "messagesForm"
     
     messagesDiv.appendChild(messagesHeader);
     messagesDiv.appendChild(mList);
