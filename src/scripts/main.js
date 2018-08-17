@@ -50,8 +50,6 @@ $("#login-div").on("click", (event) => {
                 })
                 .then(() => {
                     showEventStuff.showEventForm()
-                    // let user = JSON.parse(sessionStorage.getItem("userInfo"));
-                    // let userId = user[0].id;
                     manageUserData.getData.getEvents(userSS.loadUserIDFromSS())
                         .then(events => {
                             events.forEach(event => {

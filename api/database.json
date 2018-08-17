@@ -29,6 +29,12 @@
       "email": "j",
       "photo": "",
       "id": 5
+    },
+    {
+      "username": "kayla",
+      "email": "kayla@me.com",
+      "photo": "C:\\fakepath\\9 3:4.JPG",
+      "id": 6
     }
   ],
   "tasks": [],
@@ -56,6 +62,22 @@
       "date": "Thu Aug 16 2018 11:44:54 GMT-0500 (Central Daylight Time)",
       "userId": 4,
       "id": 3
+    },
+    {
+      "title": "new stuff",
+      "synopsis": "sdafsd",
+      "url": "asdfasdfsdgsd",
+      "date": "Thu Aug 16 2018 18:56:23 GMT-0500 (Central Daylight Time)",
+      "userId": 6,
+      "id": 4
+    },
+    {
+      "title": "more new stuff",
+      "synopsis": "asdffdghfg",
+      "url": "dfghtrgdfg",
+      "date": "Thu Aug 16 2018 18:56:36 GMT-0500 (Central Daylight Time)",
+      "userId": 6,
+      "id": 5
     }
   ],
   "events": [
@@ -135,6 +157,20 @@
       "date": "2018-08-25",
       "location": "dfgsdfgsd",
       "id": 16
+    },
+    {
+      "userId": 6,
+      "title": "NSS meet up",
+      "date": "2018-08-22",
+      "location": "sddfgsdf",
+      "id": 17
+    },
+    {
+      "userId": 6,
+      "title": "nashville hipster meet up",
+      "date": "2018-08-08",
+      "location": "sfgdsfgsdfg",
+      "id": 18
     }
   ],
   "friends": [],
