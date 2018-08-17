@@ -16,11 +16,17 @@
      padding-right: .25em;
  }
  
+ /* #task-container {
+    max-height: 400px;
+    min-height: 400px;
+ } */
+
  #task-container h3 {
      color: white;
      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
      padding-top: .35em;
  }
+
  
  #task-container .card-header {
      background-color: #ca347a;
@@ -28,7 +34,8 @@
  }
 
  #list-tasks-container {
-     max-height: 700px;
+     max-height: 400px;
+     min-height: 400px;
      overflow: scroll;
  }
  

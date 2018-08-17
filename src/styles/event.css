@@ -71,7 +71,7 @@
 
 
 .do-this div:first-child {
-    background-color: rgba(105, 105, 105, 0.226);
+    background-color: rgb(197, 196, 196);
     font-weight: bold; 
     font-size: 1.4em;
 }
@@ -111,6 +111,7 @@
     background-color: dimgray;
 }
 #event-list {
-    max-height: 500px;
+    min-height: 400px;
+    max-height: 400px;
     overflow: scroll;
 }

@@ -1,11 +1,12 @@
 #messages-div {
     border-radius: 5px;
     border: 1px solid gray;
-    margin: 1em
+    margin: 1em;
 }
 
 #messagesList {
-    max-height: 500px;
+    min-height: 400px;
+    max-height: 400px;
     overflow: scroll;
 }
 
