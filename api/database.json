@@ -49,22 +49,7 @@
       "id": 9
     }
   ],
-  "tasks": [
-    {
-      "userId": 4,
-      "title": "Feed the cats",
-      "date": "2018-08-17",
-      "checkedBox": false,
-      "id": 1
-    },
-    {
-      "userId": 4,
-      "title": "Have a lazy weekend",
-      "date": "2018-08-18",
-      "checkedBox": false,
-      "id": 2
-    }
-  ],
+  "tasks": [],
   "articles": [
     {
       "title": "1",
@@ -73,14 +58,6 @@
       "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
       "userId": 5,
       "id": 1
-    },
-    {
-      "title": "asdf",
-      "synopsis": "asf",
-      "url": "asdf",
-      "date": "Thu Aug 16 2018 11:10:29 GMT-0500 (Central Daylight Time)",
-      "userId": 2,
-      "id": 2
     },
     {
       "title": "new stuff",
@@ -99,12 +76,28 @@
       "id": 5
     },
     {
-      "title": "Cool stuff",
-      "synopsis": "article article article",
-      "url": "http://127.0.0.1:8080/",
-      "date": "Fri Aug 17 2018 11:15:22 GMT-0500 (Central Daylight Time)",
-      "userId": 4,
+      "title": "sfd",
+      "synopsis": "asdf",
+      "url": "asdf",
+      "date": "Fri Aug 17 2018 13:29:26 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
       "id": 6
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asdf",
+      "url": "asdf",
+      "date": "Fri Aug 17 2018 13:29:32 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asdfas",
+      "url": "df",
+      "date": "Fri Aug 17 2018 13:29:36 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 8
     }
   ],
   "events": [
@@ -170,27 +163,6 @@
       "date": "2018-08-08",
       "location": "sfgdsfgsdfg",
       "id": 18
-    },
-    {
-      "userId": 4,
-      "title": "Baby sitting",
-      "date": "2018-08-18",
-      "location": "@5pm",
-      "id": 19
-    },
-    {
-      "userId": 4,
-      "title": "Diskin Lady's Night",
-      "date": "2018-08-17",
-      "location": "cider for daaayys",
-      "id": 20
-    },
-    {
-      "userId": 4,
-      "title": "Greek Festival",
-      "date": "2018-09-08",
-      "location": "Fun things and yummy food!",
-      "id": 21
     }
   ],
   "friends": [],

@@ -105,9 +105,12 @@
     border-radius: 5px;
     border: 1px solid gray;
     margin: 1em;
-    max-height: 500px;
-    overflow: scroll;
+
 } 
 .hr-line {
     background-color: dimgray;
+}
+#event-list {
+    max-height: 500px;
+    overflow: scroll;
 }
