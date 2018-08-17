@@ -1,3 +1,8 @@
+/*
+    Module created by: Madi
+    PURPOSE: Performs all CRUD operations to the database
+*/
+
 const getData = Object.create(null, {
     getUsers: {
         value: () => {
@@ -12,8 +17,20 @@ const getData = Object.create(null, {
         }
     },
     getTasks: {
+        value: (userID) => {
+            return fetch(`http://localhost:8088/users/${userID}/tasks?_sort=id&_order=asc`)
+            .then(response => response.json())
+        }
+    },
+    getTaskByID: {
+        value: (taskID) => {
+            return fetch(`http://localhost:8088/tasks/${taskID}`)
+            .then(response => response.json())
+        }
+    },
+    getMessages: {
         value: () => {
-            return fetch("http://localhost:8088/tasks")
+            return fetch("http://localhost:8088/messages")
             .then(response => response.json())
         }
     },
@@ -68,6 +85,18 @@ const saveData = Object.create(null, {
             .then(response => response.json())
         }
     },
+    saveMessages: {
+        value: (article) => {
+        return fetch("http://localhost:8088/messages", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+                body: JSON.stringify(article)
+            })
+            .then(response => response.json())
+        }
+    },
     saveEvent: {
         value: (event) => {
         return fetch("http://localhost:8088/events", {
@@ -83,6 +112,18 @@ const saveData = Object.create(null, {
 })
 
 const editData = Object.create(null, {
+    editCheckbox: {
+        value: (taskID, checkbox) => {
+            return fetch(`http://localhost:8088/tasks/${taskID}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(checkbox)
+            })
+            .then(response => response.json())
+        }
+    },
     editTask: {
         value: (taskID, newTask) => {
             return fetch(`http://localhost:8088/tasks/${taskID}`, {
@@ -103,6 +144,18 @@ const editData = Object.create(null, {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(newArticle)
+            })
+            .then(response => response.json())
+        }
+    },
+    editMessage: {
+        value: (messageID, newMessage) => {
+            return fetch(`http://localhost:8088/messages/${messageID}`, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newMessage)
             })
             .then(response => response.json())
         }
@@ -133,6 +186,14 @@ const deleteData = Object.create(null, {
     deleteArticle: {
         value: (articleID) => {
             return fetch(`http://localhost:8088/articles/${articleID}`, {
+                method: "DELETE"
+            })
+            .then(response => response.json())
+        }
+    },
+    deleteMessage: {
+        value: (messageID) => {
+            return fetch(`http://localhost:8088/messages/${messageID}`, {
                 method: "DELETE"
             })
             .then(response => response.json())

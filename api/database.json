@@ -37,7 +37,22 @@
       "id": 6
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "userId": 4,
+      "title": "asdfsdfasdfasdfasd",
+      "date": "",
+      "checkedBox": false,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "title": "sadfasdf",
+      "date": "",
+      "checkedBox": false,
+      "id": 2
+    }
+  ],
   "articles": [
     {
       "title": "1",
@@ -146,9 +161,9 @@
     },
     {
       "userId": 4,
-      "title": "heeeellooooooo2.0",
+      "title": "1.2",
       "date": "2018-07-12",
-      "location": "asdfadfgsdfgsdfg",
+      "location": "asdfadfgsdfgsdfgasdfasdfsdf",
       "id": 15
     },
     {
@@ -174,5 +189,28 @@
     }
   ],
   "friends": [],
-  "messages": []
+  "messages": [
+    {
+      "message": " helloasDASDFSD",
+      "username": "",
+      "id": 1
+    },
+    {
+      "message": "FGHDFGH",
+      "date": "Fri Aug 17 2018 09:31:16 GMT-0500 (Central Daylight Time)",
+      "username": "",
+      "id": 3
+    },
+    {
+      "message": " sdfsdfgdf1221212",
+      "username": "",
+      "id": 4
+    },
+    {
+      "message": "sdfgsd",
+      "date": "Fri Aug 17 2018 09:45:05 GMT-0500 (Central Daylight Time)",
+      "username": "",
+      "id": 5
+    }
+  ]
 }
