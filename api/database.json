@@ -35,6 +35,12 @@
       "email": "kayla@me.com",
       "photo": "C:\\fakepath\\9 3:4.JPG",
       "id": 6
+    },
+    {
+      "username": "new",
+      "email": "new",
+      "photo": "",
+      "id": 7
     }
   ],
   "tasks": [
@@ -58,6 +64,48 @@
       "date": "",
       "checkedBox": true,
       "id": 3
+    },
+    {
+      "userId": 5,
+      "title": "Feed dog",
+      "date": "",
+      "checkedBox": false,
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "title": "laundry",
+      "date": "",
+      "checkedBox": false,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "title": "Feed dogs",
+      "date": "",
+      "checkedBox": false,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "title": "go for a run",
+      "date": "",
+      "checkedBox": false,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "title": "buy food",
+      "date": "",
+      "checkedBox": false,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "title": "nap",
+      "date": "",
+      "checkedBox": false,
+      "id": 9
     }
   ],
   "articles": [
@@ -92,6 +140,22 @@
       "date": "Thu Aug 16 2018 18:56:36 GMT-0500 (Central Daylight Time)",
       "userId": 6,
       "id": 5
+    },
+    {
+      "title": "Title",
+      "synopsis": "Words",
+      "url": "www.google.com",
+      "date": "Fri Aug 17 2018 13:33:40 GMT-0500 (Central Daylight Time)",
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "title": "Title",
+      "synopsis": "words",
+      "url": "www.google.com",
+      "date": "Fri Aug 17 2018 13:48:49 GMT-0500 (Central Daylight Time)",
+      "userId": 4,
+      "id": 7
     }
   ],
   "events": [
@@ -192,31 +256,38 @@
       "date": "",
       "location": "My house",
       "id": 19
+    },
+    {
+      "userId": 5,
+      "title": "Event",
+      "date": "",
+      "location": "location",
+      "id": 20
     }
   ],
   "friends": [],
   "messages": [
     {
-      "message": "please",
-      "date": "Fri Aug 17 2018 11:52:45 GMT-0500 (Central Daylight Time)",
-      "username": "",
-      "id": 8
+      "message": "Words",
+      "date": "Fri Aug 17 2018 13:35:33 GMT-0500 (Central Daylight Time)",
+      "username": "Jonathan",
+      "id": 1
     },
     {
-      "message": "words words words",
-      "date": "Fri Aug 17 2018 11:53:14 GMT-0500 (Central Daylight Time)",
+      "message": " Test",
       "username": "",
-      "id": 9
+      "id": 2
     },
     {
-      "message": " yes?",
+      "message": " Message",
       "username": "",
-      "id": 10
+      "id": 3
     },
     {
-      "message": "old old",
+      "message": "new message",
+      "date": "Fri Aug 17 2018 13:39:43 GMT-0500 (Central Daylight Time)",
       "username": "",
-      "id": 11
+      "id": 4
     }
   ]
 }

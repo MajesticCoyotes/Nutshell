@@ -171,6 +171,7 @@ $("#login-div").on("click", (event) => {
                 .then(() => {
                     //Hides the login form
                     $("#login-div").html("")
+                    $("body").removeClass("bodyBackground")
                     appendContent()
                     loadArticleSection()
                     renderMessages()
