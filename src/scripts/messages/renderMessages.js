@@ -19,6 +19,7 @@ const renderMessages = () => {
     
     const mList = document.createElement("div")
     mList.id = "messagesList"
+    mList.classList.add("bg-white")
     
     const messagesForm = document.createElement("div")
     messagesForm.id = "messagesForm"
