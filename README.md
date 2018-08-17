@@ -1,10 +1,8 @@
 # Welcome to Nutshell
 
-----
 ## What is Nutshell?
 Nutshell is a highly sophisticated social networking platform for keeping your life organized and sharing it with your friends. 
 
-----
 ## Usage
 1. Clone or download the nutshell repository to your local machine
 2. Go into src directory, then into the lib directory
