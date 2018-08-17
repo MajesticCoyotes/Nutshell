@@ -9,7 +9,7 @@ const appendContent = () => {
         <div class="row">
             <div id="event-div" class="col-sm-5 p-0">
                 <div id="event-form"></div>
-                <div id="event-list" class="do-this"></div>
+                <div id="event-list" class="do-this bg-white"></div>
             </div>
             <div id="messages-div" class="col-sm-5 p-0"></div>
         </div>

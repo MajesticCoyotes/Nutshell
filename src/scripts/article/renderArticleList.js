@@ -17,6 +17,7 @@ const renderArticles = (userID) => {
     
     const articleList = document.createElement("div")
     articleList.id = "articleList"
+    articleList.classList.add("bg-white")
     
     articleDiv.appendChild(articleHeader)
     articleDiv.appendChild(articleList)
