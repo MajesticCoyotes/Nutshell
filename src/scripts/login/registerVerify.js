@@ -12,7 +12,7 @@ let registerVerify = (result) => {
         return registerEmail === result.email || registerUsername === result.username
     })
     if (registerEmail === "" || registerUsername === "") {
-        alert("Please evnter a valid user name and email")
+        alert("Please enter a valid username and email")
     } else if (registerUser.length > 0) {
         alert("Username and email address are already taken")
     } else {
