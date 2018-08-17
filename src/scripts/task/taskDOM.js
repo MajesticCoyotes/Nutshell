@@ -3,7 +3,7 @@
     PURPOSE: Holds a function that has the HTML representation of the Tasks module on the page
 
 */
-const createTaskDOM = (editCreatedTask) => {
+const createTaskDOM = (stringArray) => {
     $("#task-div").html(`
 
     <!-- this is the container being added to the dom -->
@@ -33,7 +33,7 @@ const createTaskDOM = (editCreatedTask) => {
                 </div>
                 <div class="modal-body">
                     <h6>Task:</h6>
-                    <input id="new-task-input" class="form-control mb-2" type="text" placeholder="Feed the bear, Do laundry, etc.">
+                    <input id="new-task-input" class="form-control mb-2" type="text" placeholder="${stringArray}">
                     <h6>Date to be completed:</h6>
                     <input id="new-date-input" class="form-control" type="date" placeholder="mm/dd/yyy">
                 </div>

@@ -88,8 +88,8 @@
       "userId": 7,
       "title": "Let's do this tomorrow",
       "date": "2018-08-18",
-      "checkedBox": false,
-      "completed": false,
+      "checkedBox": true,
+      "completed": true,
       "id": 6
     },
     {
@@ -99,6 +99,155 @@
       "checkedBox": true,
       "completed": true,
       "id": 7
+    },
+    {
+      "userId": 4,
+      "title": "do the stuff",
+      "date": "2018-08-14",
+      "checkedBox": false,
+      "completed": false,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "title": "Feed the bear 🐻",
+      "date": "",
+      "checkedBox": false,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "title": "This HAS to be DONE!! ✔️",
+      "date": "2018-08-18",
+      "checkedBox": false,
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "title": "Don't forget this! 🌟",
+      "date": "2018-08-18",
+      "checkedBox": false,
+      "completed": false,
+      "id": 11
+    },
+    {
+      "userId": 7,
+      "title": "Feed the bear",
+      "date": "2018-08-16",
+      "checkedBox": true,
+      "completed": true,
+      "id": 12
+    },
+    {
+      "userId": 7,
+      "title": "Checkbox changes",
+      "date": "2018-08-02",
+      "checkedBox": true,
+      "completed": true,
+      "id": 13
+    },
+    {
+      "userId": 7,
+      "title": "Let's do this thing tomorrow!",
+      "date": "2018-08-18",
+      "checkedBox": true,
+      "completed": true,
+      "id": 14
+    },
+    {
+      "userId": 7,
+      "title": "make this thing scroooooolllllllll",
+      "date": "2018-08-08",
+      "checkedBox": true,
+      "completed": true,
+      "id": 15
+    },
+    {
+      "userId": 7,
+      "title": "Add some more to make it scrollllll",
+      "date": "2018-08-15",
+      "checkedBox": true,
+      "completed": true,
+      "id": 16
+    },
+    {
+      "userId": 7,
+      "title": "Make sure to do this by TOMORROW! 🌟",
+      "date": "2018-08-18",
+      "checkedBox": false,
+      "completed": false,
+      "id": 17
+    },
+    {
+      "userId": 7,
+      "title": "Feed the bear! 🐻",
+      "date": "2018-08-19",
+      "checkedBox": false,
+      "completed": false,
+      "id": 18
+    },
+    {
+      "userId": 7,
+      "title": "Do this",
+      "date": "2018-08-16",
+      "checkedBox": true,
+      "completed": true,
+      "id": 19
+    },
+    {
+      "userId": 7,
+      "title": "sdnfgjsa",
+      "date": "",
+      "checkedBox": true,
+      "completed": true,
+      "id": 20
+    },
+    {
+      "userId": 7,
+      "title": "dfsf",
+      "date": "",
+      "checkedBox": true,
+      "completed": true,
+      "id": 21
+    },
+    {
+      "userId": 7,
+      "title": "Binge watch my TV show",
+      "date": "2018-08-17",
+      "checkedBox": false,
+      "id": 22
+    },
+    {
+      "userId": 7,
+      "title": "Code today",
+      "date": "2018-08-22",
+      "checkedBox": false,
+      "completed": false,
+      "id": 23
+    },
+    {
+      "userId": 7,
+      "title": "Do laundry",
+      "date": "2018-08-15",
+      "checkedBox": false,
+      "completed": false,
+      "id": 24
+    },
+    {
+      "userId": 7,
+      "title": "Hey I already did that",
+      "date": "2018-08-15",
+      "checkedBox": false,
+      "completed": false,
+      "id": 25
+    },
+    {
+      "userId": 7,
+      "title": "DO SOMETHING ELSE",
+      "date": "2018-08-02",
+      "checkedBox": false,
+      "completed": false,
+      "id": 26
     }
   ],
   "articles": [

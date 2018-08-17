@@ -12,7 +12,10 @@ const deleteTaskModal = (taskID) => {
             </div>
             <div class="modal-body">
               <p>
-              By marking this task complete, it will be deleted from the page. Are you sure you want to delete this task? (It will stay on the page, uncompleted otherwise.)
+              By marking this task complete, it will be deleted from the page. Are you sure you want to delete this task? 
+              </p>
+              <p>
+              (It will stay on the page, uncompleted, if no)
               </p>
             </div>
             <div class="modal-footer">

@@ -2,7 +2,8 @@
     Module Created By: Madi
     PURPOSE: Handles ALL html representations
 */
-
+const stringArray = require("./randomStrings");
+const randomStringGenerator = require("./randomStringGenerator");
 const manageUserData = require("../DataManager");
 const editTaskModal = require("./editTaskModal");
 const deleteTaskModal = require("./deleteTaskModal");
@@ -15,7 +16,8 @@ This object holds ALL of the html representations
 const renderTasks = Object.create(null, {
     renderTaskDOM: {
         value: () => {
-            taskDOM();
+            const randomString = randomStringGenerator(stringArray);
+            taskDOM(randomString);
         }
 
     },
