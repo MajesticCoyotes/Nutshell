@@ -1,20 +1,20 @@
 {
   "users": [
     {
-      "username": "iamkaylareid",
-      "email": "iamkaylareid@gmail.com",
+      "username": "madi",
+      "email": "testing@test.com",
       "photo": "",
       "id": 1
     },
     {
-      "username": "me",
-      "email": "me@me.com",
-      "photo": "",
+      "username": "test",
+      "email": "testing",
+      "photo": "C:\\fakepath\\state-quarters-map.jpg",
       "id": 2
     },
     {
-      "username": "madi",
-      "email": "madi@madi.com",
+      "username": "testing",
+      "email": "test",
       "photo": "",
       "id": 3
     },
@@ -25,86 +25,220 @@
       "id": 4
     },
     {
-      "username": "Jonathan",
-      "email": "j",
+      "username": "me",
+      "email": "me",
       "photo": "",
       "id": 5
-    }
-  ],
-  "tasks": [],
-  "articles": [
+    },
     {
-      "title": "1",
-      "synopsis": "1",
-      "url": "1",
-      "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
-      "userId": 5,
-      "id": 1
-    }
-  ],
-  "events": [
-    {
-      "userId": 3,
-      "title": "hello 1",
-      "date": "2018-08-07",
-      "location": "sadfasd",
+      "username": "hello",
+      "email": "hello",
+      "photo": "",
       "id": 6
-    },
+    }
+  ],
+  "tasks": [
     {
-      "userId": 3,
-      "title": "hello 2",
-      "date": "2018-08-16",
-      "location": "sadfasdfasd",
-      "id": 7
-    },
-    {
-      "userId": 3,
-      "title": "hello 3",
-      "date": "2018-08-21",
-      "location": "asdfasdf",
-      "id": 8
+      "userId": 5,
+      "title": "feed the bear",
+      "date": "2018-08-14",
+      "checkedBox": false,
+      "id": 2
     },
     {
       "userId": 2,
-      "title": "event 1",
-      "date": "2018-08-02",
-      "location": "asdfasd",
+      "title": "this one should only be for test testing",
+      "date": "2018-08-24",
+      "checkedBox": true,
+      "id": 3
+    },
+    {
+      "userId": 5,
+      "title": "this should only be for me me",
+      "date": "2018-08-17",
+      "checkedBox": false,
+      "id": 4
+    },
+    {
+      "userId": 4,
+      "title": "feed bear",
+      "date": "2018-08-19",
+      "checkedBox": true,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "title": "omg",
+      "date": "2018-08-20",
+      "checkedBox": true,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "title": "new task",
+      "date": "2018-08-23",
+      "checkedBox": true,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "title": "the quick brown fox jumps over the lazy dog.",
+      "date": "2018-08-16",
+      "checkedBox": true,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "title": "sdfnsdgfj,hadfsnasd fuck you dist folder",
+      "date": "2018-08-13",
+      "checkedBox": true,
       "id": 9
     },
     {
       "userId": 2,
-      "title": "event 2",
-      "date": "2018-08-16",
-      "location": "asdasdfasdfa",
+      "title": "ONLY FOR TEST TESTING",
+      "date": "2018-08-21",
+      "checkedBox": true,
       "id": 10
     },
     {
-      "userId": 2,
-      "title": "event 4.4",
-      "date": "2018-08-21",
-      "location": "sadfasdfasd",
+      "userId": 6,
+      "title": "hello, tasks!",
+      "date": "2018-08-27",
+      "checkedBox": false,
       "id": 11
     },
     {
-      "userId": 4,
-      "title": "dope",
-      "date": "2018-08-01",
-      "location": "asfdadfgsdf",
+      "userId": 2,
+      "title": "feed",
+      "date": "2018-08-21",
+      "checkedBox": true,
       "id": 12
     },
     {
-      "userId": 4,
-      "title": "uyjfjfj",
-      "date": "",
-      "location": "",
+      "userId": 2,
+      "title": "do this",
+      "date": "2018-08-13",
+      "checkedBox": true,
       "id": 13
     },
     {
-      "userId": 5,
-      "title": "new.2",
-      "date": "2018-08-24",
-      "location": "new",
+      "userId": 2,
+      "title": "BOOTSTRAP",
+      "date": "2018-08-28",
+      "checkedBox": true,
       "id": 14
+    },
+    {
+      "userId": 4,
+      "title": "kshdgflkwyfjwhd",
+      "date": "2018-08-23",
+      "checkedBox": true,
+      "id": 15
+    },
+    {
+      "userId": 4,
+      "title": "my button worksssss",
+      "date": "2018-08-22",
+      "checkedBox": true,
+      "id": 16
+    },
+    {
+      "userId": 4,
+      "title": "MY HOVER WORKS BITCHES",
+      "date": "2018-08-21",
+      "checkedBox": true,
+      "id": 17
+    },
+    {
+      "userId": 4,
+      "title": "feed die Bär",
+      "date": "",
+      "checkedBox": true,
+      "id": 18
+    },
+    {
+      "userId": 4,
+      "title": "hi",
+      "date": "2018-07-31",
+      "checkedBox": true,
+      "id": 19
+    },
+    {
+      "userId": 4,
+      "title": "fuck yeah",
+      "date": "2018-08-14",
+      "checkedBox": true,
+      "id": 20
+    },
+    {
+      "userId": 4,
+      "title": "dsfgaf",
+      "date": "0003-12-31",
+      "checkedBox": true,
+      "id": 21
+    },
+    {
+      "userId": 2,
+      "title": "test",
+      "date": "",
+      "checkedBox": false,
+      "id": 22
+    },
+    {
+      "userId": 4,
+      "title": "THIS IS AWESOME-er",
+      "date": "2018-08-14",
+      "checkedBox": true,
+      "id": 23
+    },
+    {
+      "userId": 4,
+      "title": "sdfmdbAKSJgcahlqr vgersuchka3vresabov3tc`4",
+      "date": "",
+      "checkedBox": false,
+      "id": 24
+    }
+  ],
+  "articles": [
+    {
+      "title": "test",
+      "synopsis": "testing",
+      "url": "asgrw34arwefafdc",
+      "date": "Thu Aug 16 2018 19:00:06 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "title": "so fancy",
+      "synopsis": "so many modals",
+      "url": "bootstrap suckas",
+      "date": "Thu Aug 16 2018 19:12:35 GMT-0500 (Central Daylight Time)",
+      "userId": 4,
+      "id": 3
+    }
+  ],
+  "events": [
+    {
+      "userId": 4,
+      "title": "dertw4arwafd",
+      "date": "",
+      "location": "343qt4grfdAWEds",
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "title": "shit works",
+      "date": "",
+      "location": "NSS",
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "title": "shit works again forgot date first time",
+      "date": "2018-08-13",
+      "location": "NSS",
+      "id": 3
     }
   ],
   "friends": [],
