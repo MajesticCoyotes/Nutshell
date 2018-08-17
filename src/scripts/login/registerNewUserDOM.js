@@ -8,7 +8,7 @@ const registerNewUser = () => {
         <input required type="text" id="register-username"><br>
 
         <label required for="register-email">Email Address:</label>
-        <input required type="text" id="register-email"><br>
+        <input required type="email" id="register-email"><br>
 
         <label required for="pregister-hoto">Photo:</label>
         <input type="file" id="register-photo"><br>

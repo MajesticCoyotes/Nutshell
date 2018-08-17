@@ -34,8 +34,8 @@ const eventListDom = (newEvent) => {
     return `<div id="event-div--${newEvent.id}" class="event">
                 <h4 id="title-${newEvent.id}">${newEvent.title}</h4>
                 <hr class="hr-line">
-                <p id="date-${newEvent.id}">${newEvent.date}</p>
-            <p id="location-${newEvent.id}">${newEvent.location}</p>
+                <p id="date-${newEvent.id}">Date: ${newEvent.date}</p>
+            <p id="location-${newEvent.id}">Location: ${newEvent.location}</p>
             <button class="edit-button"><i class="fas fa-edit editBtn" id="edit-button--${newEvent.id}"></i></button>
             <button class="delete-button"><i class="fas fa-trash-alt deleteBtn" id="delete-button--${newEvent.id}"></i></button>
         </div>`

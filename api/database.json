@@ -19,12 +19,6 @@
       "id": 3
     },
     {
-      "username": "",
-      "email": "",
-      "photo": "",
-      "id": 4
-    },
-    {
       "username": "Jonathan",
       "email": "j",
       "photo": "",
@@ -35,6 +29,24 @@
       "email": "kayla@me.com",
       "photo": "C:\\fakepath\\9 3:4.JPG",
       "id": 6
+    },
+    {
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
+      "id": 7
+    },
+    {
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
+      "id": 8
+    },
+    {
+      "username": "me",
+      "email": "me@me.com",
+      "photo": "",
+      "id": 9
     }
   ],
   "tasks": [
@@ -184,8 +196,7 @@
   "friends": [],
   "messages": [
     {
-      "message": "FGHDFGH",
-      "date": "Fri Aug 17 2018 09:31:16 GMT-0500 (Central Daylight Time)",
+      "message": " FGHDFGH",
       "username": "",
       "id": 3
     },
