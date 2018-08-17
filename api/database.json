@@ -29,6 +29,77 @@
       "email": "kayla@me.com",
       "photo": "C:\\fakepath\\9 3:4.JPG",
       "id": 6
+    },
+    {
+      "username": "new",
+      "email": "new",
+      "photo": "",
+      "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "userId": 4,
+      "title": "asdfsdfasdfasdfasd",
+      "date": "",
+      "checkedBox": true,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "title": "sadfasdf",
+      "date": "",
+      "checkedBox": true,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "title": "New",
+      "date": "",
+      "checkedBox": true,
+      "id": 3
+    },
+    {
+      "userId": 5,
+      "title": "Feed dog",
+      "date": "",
+      "checkedBox": false,
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "title": "laundry",
+      "date": "",
+      "checkedBox": false,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "title": "Feed dogs",
+      "date": "",
+      "checkedBox": false,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "title": "go for a run",
+      "date": "",
+      "checkedBox": false,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "title": "buy food",
+      "date": "",
+      "checkedBox": false,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "title": "nap",
+      "date": "",
+      "checkedBox": false,
+      "id": 9
     }
   ],
   "tasks": [],
@@ -40,6 +111,14 @@
       "date": "Thu Aug 16 2018 10:27:20 GMT-0500 (Central Daylight Time)",
       "userId": 5,
       "id": 1
+    },
+    {
+      "title": "asdf",
+      "synopsis": "asf",
+      "url": "asdf",
+      "date": "Thu Aug 16 2018 11:10:29 GMT-0500 (Central Daylight Time)",
+      "userId": 2,
+      "id": 2
     },
     {
       "title": "new stuff",
@@ -58,6 +137,20 @@
       "id": 5
     },
     {
+      "title": "Title",
+      "synopsis": "Words",
+      "url": "www.google.com",
+      "date": "Fri Aug 17 2018 13:33:40 GMT-0500 (Central Daylight Time)",
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "title": "Title",
+      "synopsis": "words",
+      "url": "www.google.com",
+      "date": "Fri Aug 17 2018 13:48:49 GMT-0500 (Central Daylight Time)",
+      "userId": 4,
+      "id": 7,
       "title": "sfd",
       "synopsis": "asdf",
       "url": "asdf",
@@ -145,25 +238,46 @@
       "date": "2018-08-08",
       "location": "sfgdsfgsdfg",
       "id": 18
+    },
+    {
+      "userId": 4,
+      "title": "New!",
+      "date": "",
+      "location": "My house",
+      "id": 19
+    },
+    {
+      "userId": 5,
+      "title": "Event",
+      "date": "",
+      "location": "location",
+      "id": 20
     }
   ],
   "friends": [],
   "messages": [
     {
+      "message": "Words",
+      "date": "Fri Aug 17 2018 13:35:33 GMT-0500 (Central Daylight Time)",
+      "username": "Jonathan",
+      "id": 1
+    },
+    {
+      "message": " Test",
       "message": " FGHDFGH",
+      "username": "",
+      "id": 2
+    },
+    {
+      "message": " Message",
       "username": "",
       "id": 3
     },
     {
-      "message": " sdfsdfgdf1221212",
+      "message": "new message",
+      "date": "Fri Aug 17 2018 13:39:43 GMT-0500 (Central Daylight Time)",
       "username": "",
       "id": 4
-    },
-    {
-      "message": "sdfgsd",
-      "date": "Fri Aug 17 2018 09:45:05 GMT-0500 (Central Daylight Time)",
-      "username": "",
-      "id": 5
     }
   ]
 }

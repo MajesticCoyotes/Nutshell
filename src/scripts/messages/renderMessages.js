@@ -7,6 +7,7 @@ const newMessageForm = require("./newMessageForm")
 const userSS = require("../userSS")
 const deleteMessages = require("./deleteMessages")
 const editMessageButton = require("./editMessageButtons")
+const buildMessageList = require("./buildMessageList")
 
 
 
@@ -62,18 +63,8 @@ const renderMessages = () => {
                 $("#newMessageContent").val("")
             })
             //Rerenders the list with the newly added message
-            .then(() => {
-                //Clears the message list
-                document.querySelector("#messagesList").innerHTML = ""
-                dataManager.getData.getMessages()
-                    .then((messages) => {
-                        messages.forEach(m => {
-                            document.querySelector("#messagesList").innerHTML += messageDOM(m)
-                        })
-                    })
-            })
-            .then(() => deleteMessages()) 
-            .then(() =>  editMessageButton())
+            .then(() => buildMessageList())
+          
     })
 }
 

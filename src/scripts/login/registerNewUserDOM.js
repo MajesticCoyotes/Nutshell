@@ -3,15 +3,12 @@
 
 const registerNewUser = () => {
     return `
-    <fieldset>
+    <fieldset class="text-white">
         <label for="register-username">Username:</label>
         <input required type="text" id="register-username"><br>
 
         <label required for="register-email">Email Address:</label>
         <input required type="email" id="register-email"><br>
-
-        <label required for="pregister-hoto">Photo:</label>
-        <input type="file" id="register-photo"><br>
 
         <button id="registerUserButton" class="btn btn-primary">Create New User</button>
     </fieldset>
