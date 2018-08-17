@@ -1,3 +1,8 @@
+/*
+    Module created by: Madi
+    PURPOSE: Performs all CRUD operations to the database
+*/
+
 const getData = Object.create(null, {
     getUsers: {
         value: () => {
@@ -12,8 +17,14 @@ const getData = Object.create(null, {
         }
     },
     getTasks: {
-        value: () => {
-            return fetch("http://localhost:8088/tasks")
+        value: (userID) => {
+            return fetch(`http://localhost:8088/users/${userID}/tasks?_sort=id&_order=asc`)
+            .then(response => response.json())
+        }
+    },
+    getTaskByID: {
+        value: (taskID) => {
+            return fetch(`http://localhost:8088/tasks/${taskID}`)
             .then(response => response.json())
         }
     },
@@ -101,6 +112,18 @@ const saveData = Object.create(null, {
 })
 
 const editData = Object.create(null, {
+    editCheckbox: {
+        value: (taskID, checkbox) => {
+            return fetch(`http://localhost:8088/tasks/${taskID}`, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(checkbox)
+            })
+            .then(response => response.json())
+        }
+    },
     editTask: {
         value: (taskID, newTask) => {
             return fetch(`http://localhost:8088/tasks/${taskID}`, {
