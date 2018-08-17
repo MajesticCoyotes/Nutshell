@@ -15,7 +15,7 @@ const taskSS = require("./task/taskSS");
 // manageUserData.getData.getUsers()
 
 //Loads login form as soon as you land on the page
-landingPageDOM()
+landingPageDOM();
 
 /*
     Author: Madi
@@ -34,27 +34,28 @@ $("body").click((event)=>{
     */
 
     // 1.
-    if(event.target.id === "save-new-task-btn"){
+    if (event.target.id === "save-new-task-btn") {
         // 2.
         let newTask = {
             userId: taskSS(),
             title: $("#new-task-input").val(),
             date: $("#new-date-input").val(),
-            checkedBox: false
+            checkedBox: false,
+            completed: false
         }
         // 3.
         manageUserData.saveData.saveTask(newTask)
-        .then(() => {
-            // 4.
-            $("#new-task-input").val("");
-            $("#new-date-input").val("");
-            // 5.
-            $("#task-container").html("");
-            // 6. 
-            renderTasks.renderTaskDOM();
-            // 7.
-            renderTasks.getTasks(newTask.userId);
-        })
+            .then(() => {
+                // 4.
+                $("#new-task-input").val("");
+                $("#new-date-input").val("");
+                // 5.
+                $("#task-container").html("");
+                // 6. 
+                renderTasks.renderTaskDOM();
+                // 7.
+                renderTasks.getTasks(newTask.userId);
+            })
     }
 
     /*
@@ -73,30 +74,35 @@ $("body").click((event)=>{
     */
 
     // 1.
-    if(event.target.id.includes("checkbox")){
-        const getTaskID = event.target.id.split("--")[1];
-        const deletePrompt = prompt("Are you sure you want to delete this task?");
-        if(deletePrompt.toUpperCase() === "YES") {
+    if (event.target.id.includes("checkbox")) {
+        const taskID = event.target.id.split("--")[1];
+        console.log(event.target.id)
+        renderTasks.deleteTask(taskID)
+    }
         
+        if (event.target.id.includes("yes-btn-modal")) {
+            const getTaskID = event.target.id.split("--")[1];
+            console.log(event.target.id);
             let checkboxChecked = {
                 // 3.
-                checkedBox: true
+                checkedBox: true,
+                completed: true
             }
             // 4.
             manageUserData.editData.editCheckbox(getTaskID, checkboxChecked)
-            .then(()=>{
+            .then(() => {
                 // 5.
-                    $("#task-container").html("");
-                    // 6.
-                    renderTasks.renderTaskDOM();
-                    // 7.
-                    renderTasks.getTasks(taskSS());
+                $("#task-container").html("");
+                // 6.
+                renderTasks.renderTaskDOM();
+                // 7.
+                renderTasks.getTasks(taskSS());
             })
             // 8.
             manageUserData.getData.getTaskByID(getTaskID)
             .then((task) => {
                 // 9.
-                if(task.checkedBox === true){
+                if (task.checkedBox === true) {
                     // 10.
                     $(`#created-task--${getTaskID}`).remove();
                 }
@@ -106,26 +112,24 @@ $("body").click((event)=>{
         } else {
             event.target.checked = false;
         }
-    }
-       // 2.
-
-    /*
-    IF USER CLICKED ON THE EDIT TASK BUTTON:
+        
+        /*
+        IF USER CLICKED ON THE EDIT TASK BUTTON:
         1. when the user clicks on the edit task button, it is creating the modal to take the user inputs from the task
         2. 
-    */
-
-   // 1.
-    if(event.target.id.includes("edit-task-btn")){
-        const editTaskID = event.target.id.split("--")[1];
-        const editTitle = $(`#user-created-task--${editTaskID}`).text();
+        */
+       
+       // 1.
+       if (event.target.id.includes("edit-task-btn")) {
+           const editTaskID = event.target.id.split("--")[1];
+           const editTitle = $(`#user-created-task--${editTaskID}`).text();
         const editDate = $(`#user-created-date--${editTaskID}`).val();
         renderTasks.editCreatedTaskModal(editTaskID, editTitle, editDate);
-        
+
     }
 
     // if user clicks on the "save changes" button
-    if(event.target.id.includes("save-edited-task")){
+    if (event.target.id.includes("save-edited-task")) {
         // grab value of user input
         const newTaskID = event.target.id.split("--")[1];
         const newEditedTask = {
@@ -135,11 +139,11 @@ $("body").click((event)=>{
             checkedBox: false
         }
         manageUserData.editData.editTask(newTaskID, newEditedTask)
-        .then(()=>{
-            $("#task-container").html("");
-            renderTasks.renderTaskDOM();
-            renderTasks.getTasks(newEditedTask.userId);
-        })
+            .then(() => {
+                $("#task-container").html("");
+                renderTasks.renderTaskDOM();
+                renderTasks.getTasks(newEditedTask.userId);
+            })
     }
 })
 
@@ -216,7 +220,7 @@ $("body").on("click", (event) => {
                             $("#event-list").append(showEventStuff.eventListDom(event))
                         })
                     })
-                })
+            })
 
         showEventStuff.eventListDom(newEvent);
     }
@@ -273,4 +277,4 @@ const storageChecker = () => {
                 })        
     }
 }
-storageChecker()
+storageChecker();

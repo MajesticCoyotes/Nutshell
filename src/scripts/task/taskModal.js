@@ -1,7 +1,6 @@
 /*
     Module Created By: Madi
     PURPOSE: Holds the HTML representation of the modal that pops up when the user wants to create a new task
-    i'm going to start changing a file like this
 */
 
 const taskDOM = require("./taskDOM");
@@ -22,7 +21,7 @@ const createNewTask = (taskID, createdTask, createdDate) => {
                             <span>
                             Completed:
                             </span>
-                                <input class="checkbox" id="checkbox--${taskID}"type="checkbox">
+                                <input data-toggle="modal" data-target="#delete-modal--${taskID}" class="checkbox" id="checkbox--${taskID}"type="checkbox">
                         </div>
                         </div>
                 </div>
