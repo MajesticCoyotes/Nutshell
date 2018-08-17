@@ -40,15 +40,15 @@
   "tasks": [
     {
       "userId": 4,
-      "title": "Do Stuff",
-      "date": "",
+      "title": "Feed the cats",
+      "date": "2018-08-17",
       "checkedBox": false,
       "id": 1
     },
     {
       "userId": 4,
-      "title": "sadfasdf",
-      "date": "",
+      "title": "Have a lazy weekend",
+      "date": "2018-08-18",
       "checkedBox": false,
       "id": 2
     }
@@ -71,14 +71,6 @@
       "id": 2
     },
     {
-      "title": "sdfg",
-      "synopsis": "sdfg",
-      "url": "sdgfsdfgsdfgsdfgsdfgsdfg",
-      "date": "Thu Aug 16 2018 11:44:54 GMT-0500 (Central Daylight Time)",
-      "userId": 4,
-      "id": 3
-    },
-    {
       "title": "new stuff",
       "synopsis": "sdafsd",
       "url": "asdfasdfsdgsd",
@@ -93,6 +85,14 @@
       "date": "Thu Aug 16 2018 18:56:36 GMT-0500 (Central Daylight Time)",
       "userId": 6,
       "id": 5
+    },
+    {
+      "title": "Cool stuff",
+      "synopsis": "article article article",
+      "url": "http://127.0.0.1:8080/",
+      "date": "Fri Aug 17 2018 11:15:22 GMT-0500 (Central Daylight Time)",
+      "userId": 4,
+      "id": 6
     }
   ],
   "events": [
@@ -161,33 +161,28 @@
     },
     {
       "userId": 4,
-      "title": "sadfasdf",
-      "date": "2018-08-08",
-      "location": "asdfasd",
+      "title": "Baby sitting",
+      "date": "2018-08-18",
+      "location": "@5pm",
       "id": 19
     },
     {
       "userId": 4,
-      "title": "asdfasd",
-      "date": "2018-07-31",
-      "location": "asdfasd",
+      "title": "Diskin Lady's Night",
+      "date": "2018-08-17",
+      "location": "cider for daaayys",
       "id": 20
     },
     {
       "userId": 4,
-      "title": "asdfasd",
-      "date": "2018-08-07",
-      "location": "asdf",
+      "title": "Greek Festival",
+      "date": "2018-09-08",
+      "location": "Fun things and yummy food!",
       "id": 21
     }
   ],
   "friends": [],
   "messages": [
-    {
-      "message": " helloasDASDFSD",
-      "username": "",
-      "id": 1
-    },
     {
       "message": "FGHDFGH",
       "date": "Fri Aug 17 2018 09:31:16 GMT-0500 (Central Daylight Time)",
