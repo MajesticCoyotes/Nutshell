@@ -71,7 +71,7 @@
 
 
 .do-this div:first-child {
-    background-color: rgba(105, 105, 105, 0.486);
+    background-color: rgba(105, 105, 105, 0.226);
     font-weight: bold; 
     font-size: 1.4em;
     /* width: 35em; */
@@ -100,7 +100,7 @@
     margin: 0 auto;
     background-color: rgb(153, 0, 153);
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* event div styles */
