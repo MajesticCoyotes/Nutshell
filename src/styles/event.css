@@ -83,7 +83,7 @@
     border: 1px solid gray;
     margin: 1em;
     padding: 1em;
-    box-shadow: 1px 1px black;
+    box-shadow: 0 6px 3px -6px black;
 } 
 .event:hover {
     transform: scale(1.025);
