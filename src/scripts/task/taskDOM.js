@@ -8,7 +8,7 @@ const createTaskDOM = (editCreatedTask) => {
 
     <!-- this is the container being added to the dom -->
 
-    <div id="task-container" class="card w-75">
+    <div id="task-container" class="card m-3">
         <div class="d-flex flex-row card-header">
         <h3>Tasks</h3>
         <!-- button targets the modal below, and opens it when the button is clicked -->

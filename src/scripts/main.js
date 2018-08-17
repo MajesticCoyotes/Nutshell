@@ -7,7 +7,7 @@ const registerVerify = require("./login/registerVerify")
 const loadArticleSection = require("./article/loadArticleSection")
 const userSS = require("./userSS");
 const renderTasks = require("./task/renderTasks");
-const registerNewUser = require("./login/newUserDOM");
+const registerNewUser = require("./login/registerNewUserDOM");
 const taskSS = require("./task/taskSS");
 
 manageUserData.getData.getUsers()
@@ -141,9 +141,11 @@ $("#task-div").click((event)=>{
     }
 })
 
-// login and register eventlisteners via madi, jonathan, and kayla
 $("#login-div").on("click", (event) => {
-
+    //If a user clicks on the register new user button, they go to the register new account screen
+    if (event.target.id === "register-user-button") {
+        $("#login-div").html(registerNewUser)
+    };
 
     //If a user tries to register a new account, it will register their name and email address if they haven't been used yet
     if (event.target.id === "registerUserButton") {
@@ -152,11 +154,13 @@ $("#login-div").on("click", (event) => {
     };
 
     if (event.target.id === "login-button") {
-        let loginEmail = $("#login-email").val()
-        manageUserData.getData.getUserEmails(loginEmail)
+        manageUserData.getData.getUsers()
             .then((result) => {
-                let stringifiedUserObject = JSON.stringify(result);
-                sessionStorage.setItem("userInfo", stringifiedUserObject);
+                let user = result.find(result => {
+
+                    //Checks to see if the info entered is in the database
+                    return $("#login-email").val() === result.email && $("#login-name").val() === result.username
+                })
                 if (!user) {
                     alert("Username does not exist")
                 } else {
@@ -164,6 +168,7 @@ $("#login-div").on("click", (event) => {
                     userSS.setUserInSS()
                         .then(() => loadArticleSection())
                         .then(() => {
+                            
                             showEventStuff.showEventForm()
                             // let user = JSON.parse(sessionStorage.getItem("userInfo"));
                             // let userId = user[0].id;
@@ -175,11 +180,14 @@ $("#login-div").on("click", (event) => {
                                 })
                             //Hides the login form
                             $("#login-div").html("");
+                            renderTasks.renderTaskDOM();
+                            renderTasks.getTasks(taskSS());
                         })
                 }
             })
     };
 });
+
 
 
 
