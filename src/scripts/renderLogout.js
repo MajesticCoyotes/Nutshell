@@ -16,6 +16,7 @@ let renderLogout = () => {
         let stringifiedUserObject = JSON.stringify();
         sessionStorage.setItem("userInfo", stringifiedUserObject);
         $("body").addClass("bodyBackground")
+        $("body").removeClass("loggedInBackground")
         $("#content").html("")
         landingPageDOM();
     })

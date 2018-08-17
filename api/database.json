@@ -86,12 +86,5 @@
     }
   ],
   "friends": [],
-  "messages": [
-    {
-      "message": "new",
-      "date": "Fri Aug 17 2018 15:17:42 GMT-0500 (Central Daylight Time)",
-      "username": "me",
-      "id": 1
-    }
-  ]
+  "messages": []
 }

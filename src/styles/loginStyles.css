@@ -64,5 +64,9 @@ body {
 
 * {
     font-family: 'Roboto', sans-serif;
+}
 
+#login-form {
+    display: flex;
+    justify-content: space-around
 }
