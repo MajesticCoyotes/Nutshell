@@ -264,6 +264,7 @@ const storageChecker = () => {
         userSS.loadUserIDFromSS()
                     $("#login-div").html("")
                     $("body").removeClass("bodyBackground")
+                    $("body").addClass("loggedInBackground")
                     appendContent()
                     loadArticleSection()
                     renderMessages()
