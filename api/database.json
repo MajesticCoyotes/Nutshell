@@ -9,6 +9,11 @@
       "username": "Jonathan",
       "email": "j",
       "id": 2
+    },
+    {
+      "username": "User1",
+      "email": "1",
+      "id": 3
     }
   ],
   "tasks": [
@@ -54,89 +59,29 @@
   ],
   "articles": [
     {
-      "title": "asdf",
-      "synopsis": "asf",
-      "url": "asdf",
-      "date": "Thu Aug 16 2018 11:10:29 GMT-0500 (Central Daylight Time)",
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "title": "sfd",
-      "synopsis": "asdf",
-      "url": "asdf",
-      "date": "Fri Aug 17 2018 13:29:26 GMT-0500 (Central Daylight Time)",
-      "userId": 2,
-      "id": 6
-    },
-    {
-      "title": "asdf",
-      "synopsis": "asdf",
-      "url": "asdf",
-      "date": "Fri Aug 17 2018 13:29:32 GMT-0500 (Central Daylight Time)",
-      "userId": 2,
-      "id": 7
-    },
-    {
-      "title": "asdf",
-      "synopsis": "asdfas",
-      "url": "df",
-      "date": "Fri Aug 17 2018 13:29:36 GMT-0500 (Central Daylight Time)",
-      "userId": 2,
-      "id": 8
-    },
-    {
-      "title": "",
-      "synopsis": "",
-      "url": "",
-      "date": "Fri Aug 17 2018 15:56:57 GMT-0500 (Central Daylight Time)",
-      "userId": 1,
-      "id": 12
-    },
-    {
       "title": "",
       "synopsis": "",
       "url": "",
       "date": "Fri Aug 17 2018 15:58:03 GMT-0500 (Central Daylight Time)",
       "userId": 1,
       "id": 13
+    },
+    {
+      "title": "Title",
+      "synopsis": "Words",
+      "url": "www.google.com",
+      "date": "Sun Aug 19 2018 15:04:46 GMT-0500 (Central Daylight Time)",
+      "userId": 1,
+      "id": 14
     }
   ],
   "events": [
-    {
-      "userId": 2,
-      "title": "event 1.3",
-      "date": "2018-08-01",
-      "location": "asdfasd",
-      "id": 9
-    },
-    {
-      "userId": 2,
-      "title": "event 2",
-      "date": "2018-08-16",
-      "location": "asdasdfasdfa",
-      "id": 10
-    },
-    {
-      "userId": 2,
-      "title": "event 4.4",
-      "date": "2018-08-21",
-      "location": "sadfasdfasd",
-      "id": 11
-    },
     {
       "userId": 1,
       "title": "",
       "date": "",
       "location": "",
       "id": 12
-    },
-    {
-      "userId": 1,
-      "title": "",
-      "date": "",
-      "location": "",
-      "id": 13
     },
     {
       "userId": 1,
@@ -149,28 +94,15 @@
   "friends": [],
   "messages": [
     {
-      "message": "sdfgadsf",
-      "date": "Fri Aug 17 2018 15:58:10 GMT-0500 (Central Daylight Time)",
-      "username": "me",
-      "id": 5
+      "message": " Hello world!",
+      "username": "User1",
+      "id": 1
     },
     {
-      "message": "hi",
-      "date": "Fri Aug 17 2018 15:59:36 GMT-0500 (Central Daylight Time)",
-      "username": "me",
-      "id": 6
-    },
-    {
-      "message": "sdfasd",
-      "date": "Fri Aug 17 2018 16:12:41 GMT-0500 (Central Daylight Time)",
-      "username": "me",
-      "id": 7
-    },
-    {
-      "message": "asdf",
-      "date": "Fri Aug 17 2018 16:12:43 GMT-0500 (Central Daylight Time)",
-      "username": "me",
-      "id": 8
+      "message": "oh hai",
+      "date": "Sun Aug 19 2018 20:17:27 GMT-0500 (Central Daylight Time)",
+      "username": "Jonathan",
+      "id": 2
     }
   ]
 }
